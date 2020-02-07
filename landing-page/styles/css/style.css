@@ -57,10 +57,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper {
+.container {
     width: 80%;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 header img {
@@ -79,7 +78,7 @@ header p {
     line-height: 29px;   
 }
 
-.main img {
+.scooterimg {
     display: block;
     width: 290px;
     margin: auto;
@@ -141,31 +140,31 @@ form button {
 }
 
 .footer {
-    background-color: #FFFD8C;
+    background-color: #fffd8c;
 }
 
-footer {
+footer .flex-items {
     width: 80%;
     margin: auto;
 }
 
-footer p {
+footer .flex-items p {
     font-size: 16px;
     line-height: 22px;    
 }
 
-footer input {
-    display: flex;;
-    flex-direction: row;
-}
-
-footer p:nth-child(1) {
+footer .flex-items p:nth-child(1) {
     font-size: 18px;
     font-weight: bold;
     padding-top: 20px;
 } 
 
-footer button {
+.flex-items fieldset {
+    width: 80%;
+    margin: auto;
+}
+
+footer .flex-items button {
     width: 100%;
     background-color: #FF8480;
     color: #FFFFFF;
@@ -174,13 +173,13 @@ footer button {
     font-size: 24px;
     border: hidden;
     border-radius: 10px;
-    margin-bottom: 40px;
     padding: 5px 60px 5px 60px;
 }
 
 .icon-list {
     text-align: center;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .icon-list ul {
@@ -202,7 +201,7 @@ footer button {
         line-height: 1.2em;
     }
 
-    .main img {
+    .scooterimg {
         justify-content: center;
     }
 
@@ -224,22 +223,31 @@ footer button {
         padding: 1em 0.8em 1em 0.8em;
     }
 
+    footer.flex-items {
+        max-width: 500px;
+    }
+
     .flex-items fieldset {
         display: flex;
         flex-wrap: nowrap;   
         justify-content: space-around;
+        width: 80%;
+        margin: auto;
     }
 
     .flex-items fieldset input.hours {
-        padding: 0px;
         width: 25%;
         margin-right: 15px;
+        padding: 0.5em;
     }
 
     .flex-items fieldset input.city {
         width: 50%;
         margin-right: 15px;
+        padding: 0.5em;
     }
+
+    
 
     .icon-list {
         display: flex;
@@ -247,27 +255,59 @@ footer button {
     }
 
     .icon-list ul {
-        width: 50%;
+        width: 300px;
     }
 
     @media (min-width: 960px) {
         header h1 {
             padding-top: 1.3em;
             padding-bottom: 0.5em;
-            max-width: 40%;
+            max-width: 100%;
         }
 
         header p {
             font-size: 1.3em;
-            max-width: 40%;
+            max-width: 100%;
         }
 
-        .main {
-            display: flex;
-            
+        .scooterimg {
+            width: 820px;
+            height: auto;
         }
 
-       
+        .contact form {
+            width: 535px;
+            margin-top: 12em;
+            margin-right: 5em;
+        }
+
+        .wrapper {
+            width: 100%;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .container header {
+            grid-column:  1 / span 4;
+            }
+        
+        .container.scooterimg {
+            grid-column: 4 / span 2;
+        }
+
+        .container.contact {
+            grid-column: 6 / span 3;
+        }
+
+        .footer {
+            width: 100%;
+        }
+
 
 
     }
