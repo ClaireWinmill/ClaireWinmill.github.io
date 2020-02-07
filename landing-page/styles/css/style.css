@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my CSS begins here */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+header p {
+    font-size: 24px;
+    line-height: 29px;   
+}
+
+.main img {
+    display: block;
+    width: 290px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contact form {
+    border: hidden;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 40px;    
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 49px;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+input[type=text]  {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F4F5;
+    font-size: 16px;
+    color: #9B9B9B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: hidden;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+input[type=checkbox] {
+    border: 5px solid black;
+    width: 25px;
+    height: 25px;
+}
+
+form button {
+    width: 100%;
+    background-color: #57EEAB;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: hidden;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #FFFD8C;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 22px;    
+}
+
+footer input {
+    display: flex;;
+    flex-direction: row;
+}
+
+footer p:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+} 
+
+footer button {
+    width: 100%;
+    background-color: #FF8480;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    border: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 5px 60px 5px 60px;
+}
+
+.icon-list {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.icon-list ul {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.icon-list ul li {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 650px) {
+    header p {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .main img {
+        justify-content: center;
+    }
+
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .contact p {
+        font-size: 1.4em;
+    }
+
+    .p2 {
+        font-size: 0.5em;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    input[type=text] {
+        padding: 1em 0.8em 1em 0.8em;
+    }
+
+    .flex-items fieldset {
+        display: flex;
+        flex-wrap: nowrap;   
+        justify-content: space-around;
+    }
+
+    .flex-items fieldset input.hours {
+        padding: 0px;
+        width: 25%;
+        margin-right: 15px;
+    }
+
+    .flex-items fieldset input.city {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .icon-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-list ul {
+        width: 50%;
+    }
+
+    @media (min-width: 960px) {
+        header h1 {
+            padding-top: 1.3em;
+            padding-bottom: 0.5em;
+            max-width: 40%;
+        }
+
+        header p {
+            font-size: 1.3em;
+            max-width: 40%;
+        }
+
+        .main {
+            display: flex;
+            
+        }
+
+       
+
+
+    }
+
+
+    
+
+}
