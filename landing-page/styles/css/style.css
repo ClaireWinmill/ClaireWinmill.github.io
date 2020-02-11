@@ -53,30 +53,42 @@ table {
     box-sizing: border-box;
 }
 
+/* background color from landing page master file applied to all of body */
+
 body {
+    background-color: #f7f7ff;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* width of 80% if applied so all content in container will only take up 80% of available space */
 .container {
     width: 80%;
     margin: auto;  
 }
+
+/* a size of 100px is applied to logo to have it stay a consistent size on the webpage, even when browser changes, it will not break */
 
 header img {
     width: 100px;
     height: auto;
 }
 
+/* font size is applied to the h1 and p tag in header div, and font color from master file is applied as well */
+
 header h1 {
+    color: #333131;
     font-weight: bold;
     font-size: 60px;
     line-height: 73px;
 }
 
 header p {
+    color: #333131;
     font-size: 24px;
     line-height: 29px;   
 }
+
+/* sizing and placement is applied to the scooter image. VW is used (relative width) so that the image can scale with the browser size */
 
 .scooterimg {
     display: block;
@@ -85,6 +97,8 @@ header p {
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+/* attributes ares applied to contact form, like padding and margin, as well as box-shadow to give the illusion of a hovering contact form */
 
 .contact form {
     background-color: #ffffff;
@@ -95,7 +109,10 @@ header p {
     margin-bottom: 40px;    
 }
 
+/* font color and styles are applied to h2 and first p tag in contact form */
+
 .contact h2 {
+    color: #333131;
     font-size: 40px;
     font-weight: bold;
     line-height: 49px;
@@ -103,9 +120,12 @@ header p {
 }
 
 .contact p {
+    color: #333131;
     font-size: 16px;
     line-height: 19px;
 }
+
+/* styling for text input boxes within contact form */
 
 input[type=text]  {
     width: 100%;
@@ -126,6 +146,8 @@ input[type=checkbox] {
     height: 25px;
 }
 
+/* specific styles, sizes and color are applied to DRIVE WITH US button in contact form */
+
 .contact form button {
     width: 100%;
     background-color: #57EEAB;
@@ -140,15 +162,21 @@ input[type=checkbox] {
     border-radius: 10px;
 }
 
+/* background color taken from master file and applied to footer */
+
 .footer {
     background-color: #fffd8c;
-    width: 100%; /*   */
+    width: 100%; 
 }
+
+/* a width is set for items in class of flex-items specifically */
 
 .footer footer .flex-items {
     width: 80%;
     margin: auto;
 }
+
+/* below is differing font sizes set for both p tags in footer */
 
 .footer footer .flex-items p {
     font-size: 16px;
@@ -161,15 +189,7 @@ input[type=checkbox] {
     padding-top: 20px;
 } 
 
-.flex-items fieldset input {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.flex-items fieldset input.hours {
-    max-width: 25%;
-}
+/* specific sizing and colors are set for CALCULATE button in footer, as it requires different styling from previous button */
 
 .flex-items fieldset .button {
     width: 100%;
@@ -184,12 +204,16 @@ input[type=checkbox] {
     padding: 0.2rem 3rem 0.2rem 3rem;
 }
 
+/* styling for social media icons */
+
 .icon-list {
     width: 80%;
     margin: auto;
     padding-bottom: 30px;
     padding-top: 30px;
 }
+
+/* flex is used to display icons in a row */
 
 .icon-list ul {
     display: flex;
@@ -198,63 +222,15 @@ input[type=checkbox] {
     justify-content: space-around;
 }
 
-/*
-
-.footer footer .flex-items fieldset {
-    width: 80%;
-    margin: auto;
-}
-
-.footer footer .flex-items fieldset {
-    width: 100%;
-    margin: auto;
-}
-
-.footer footer .flex-items .button {
-    text-align: center;
-    font-size: 24px;
-    border-radius: 10px;
-    padding: 5px 60px 5px 60px;
-}
-
-.icon-list {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.icon-list ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-/*
-
-.icon-list {
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.icon-list ul {
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: nowrap;
-}
-
-.icon-list ul li {
-    flex: 1 1 100%;
-} */
+/* attributes are set for tablet breakpoint below */
 
 @media screen and (min-width: 650px) {
     header p {
         font-size: 1em;
         line-height: 1.2em;
     }
+
+    /* a different VW is used for tablet, to prevent image from scaling too large */
 
     .scooterimg {
         width: 50vw;
@@ -275,17 +251,23 @@ input[type=checkbox] {
         padding-bottom: 2em;
     }
 
+    /* padding is added to make input text boxes larger in tablet */
+
     .contact input {
         padding: 0.8em 0.8em 0.8em 0.8em;
     }
+
+    /* display of flex is used for both p elements, HOURS, CITY, and CALCULATE elements */
 
     footer .flex-items fieldset {
         display: flex;
         flex-wrap: nowrap;
     }
 
+    /* different widths are used for input elements in footer, to display them as different sizes */
+
     input[type=text]#hours {
-        width: 15%;
+        width: 20%;
         margin-right: 15px;
     }
 
@@ -304,72 +286,18 @@ input[type=checkbox] {
         justify-content: center;
     }
 
+    /* a width is applied to social media icons, to prevent them from spacing furthur apart */
+
     .icon-list ul {
         width: 300px;
     }
-    /*
 
-    footer .flex-items fieldset {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
-    footer .flex-items fieldset input.hours {
-        max-width: 120px;
-        margin-right: 15px;
-    }
-
-    footer .flex-items fieldset input.city {
-        max-width: 260px;
-        margin-right: 15px;
-    }
-
-    footer .flex-items .button {
-        max-width: 250px;
-        text-align: center;
-   
-    } */
+    /* styling is applied for largest breakpoint which will be for desktop browsers */
 
     @media screen and (min-width: 960px) {
-        footer {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-
-        footer.flex-items {
-            max-width: 500px;
-        }
-
-        footer .flex-items fieldset {
-            display: flex;
-            flex-wrap: nowrap;   
-            justify-content: center;
-        }
-
-        .flex-items fieldset input.hours {
-            width: 25%;
-            margin-right: 15px;
-            padding: 0.5em;
-        }
-
-        .flex-items fieldset input.city {
-            width: 50%;
-            margin-right: 15px;
-            padding: 0.5em;
-        }
-
-        .icon-list {
-            display: flex;
-            justify-content: center;
-        }
-
-        .icon-list ul {
-            width: 300px;
-        }
-
-        @media (min-width: 960px) {
+            
+            /* a max-width is applied to both header elements to prevent them from spanning over entire page */
+        
             header h1 {
                 padding-top: 1.3em;
                 padding-bottom: 0.5em;
@@ -381,6 +309,8 @@ input[type=checkbox] {
                 max-width: 50%;
             }
 
+            /* flex is used for container elements to span them over 3 columns across web page */
+
             .container {
                 position: relative;
                 display: flex;
@@ -391,77 +321,58 @@ input[type=checkbox] {
             .scooterimg {
                 width: 50%;
                 position: absolute;
+                /* z-index is applied to place scooter image behind other elements */
                 z-index: -1;
                 top: 25%;
                 left: 20%;
             }
+
+            /* VW is used for contact form, to prevent image from scaling too large */
 
             .contact form {
                 width: 30vw;
                 margin-top: 10rem;
                 margin-bottom: 5rem;
             }
- 
-            .footer {
-                position: absolute;
-                width: 100%;
-                padding: 2% 10% 2% 10%;
-                justify-content: center;
+
+            .p2 {
+                font-size: 0.7em;
             }
 
-            .footer footer .flex-items {
-                max-width: 700px;   
-            }
-           
-            
-                
-            }
-
-
-
-
-                /*
-
-            .contact form {
-                width: 535px;
-                margin-top: 12em;
-                margin-right: 5em;
-            }
-
-            .wrapper {
-                width: 100%;
-                margin: auto;
-            }
-
-            .container {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                grid-template-rows: repeat(1, 1fr);
-            }
-
-            .container header {
-                grid-column:  1 / span 4;
-                }
-            
-            .container.scooterimg {
-                grid-column: 4 / span 2;
-            }
-
-            .container.contact {
-                grid-column: 6 / span 3;
-            } */
+            /* padding is applied to elements inside footer, in attempts to center content */
 
             .footer {
                 width: 100%;
-                padding: 2% 10% 2% 10%;
-                justify-content: center;
+                bottom: 0px;
+                padding: 2% 10% 2% 10%;     
+            }
+            
+            footer {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
             }
 
-            .footer footer .flex-items {
-                max-width: 700px;   
-            }
-
-
+            /* max-width is applied to .flex-items to prevent them from spanning across to much of the footer */
     
+            footer.flex-items {
+                max-width: 500px;
+            }
+    
+            footer .flex-items fieldset {
+                display: flex;
+                flex-wrap: nowrap;   
+                justify-content: center;
+            }
+
+            .flex-items p {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+    
+            .icon-list {
+                display: flex;
+                justify-content: center;
+            }
 
 }
