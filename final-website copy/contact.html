@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Loafing Around Bakery and Cafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+     
+<!--  "top" is used as an anchor for arrow at the bottom of each page -->
+    
+    
+    <div id="top" class="wrapper">
+        <header>
+            
+<!--   container is used for banner image and containing text/logo  -->
+            
+            <div class="container">
+<!-- class of hero is used to specifically target banner image-->
+                 <div class="hero">
+                
+                </div>
+                
+<!-- class of centered is used to specifically target bakery title and logo without targeting banner image-->
+
+                <div class="centered">
+                    <h1>Loafing Around</h1>
+                    <figure>
+                        <img src="img/breadloaves.png" alt="vector of bread loaves">
+                    </figure>
+                    <h2>Bakery &amp; Cafe</h2>
+                </div>
+            </div>
+            
+<!-- navigation elements "home", "about", "contact" -->
+
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+<!--    class of body-wrapper is used to specifically target elements that are the main content of each page -->
+
+    <div class="body-wrapper">
+        <h2>Drop By, or Drop Us a Line Today!</h2>
+        
+<!--contact form for users contact information -->
+        
+        <form>
+
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="spam">
+                    Yes, I'm bready to receive emails!
+                    <input type="checkbox" name="spam" id="spam" value="yes" checked>
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+<!--page break is added for mobile view -->
+
+        <hr>
+        
+<!--element for map is used with embedded google map location -->
+
+
+        <div class="map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5608.20044649669!2d-75.75899189081416!3d45.34678909509049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1576090466726!5m2!1sen!2sca" ></iframe>
+        </div>
+    </div>
+    
+<!--    element for arrow to take user back to the top of each page when clicked -->
+
+    <a class="arrow" href="#top">&uarr;</a>
+    
+<!--    footer section with containing navigation elements repeated from the top of each page -->
+    
+    <footer>
+
+        <div class="footer-nav">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+<!-- copyright element specific to my website -->
+            <div class="ft-copyright">
+                <p>&copy; 2019 Copyright cWin Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
