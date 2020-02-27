@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my CSS begins here */
+
+/* the CSS Validator didnt seem to like the *::after and *::before elements */
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+/* Navigation at top of webpage */
+
+/* Element of nav is targeted in addition to ID of nav to override base.css only targeting ID of nav */
+
+nav#nav {
+    background-color: goldenrod;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    border-style: none;
+}
+
+/* ID of nav, <a></a>, and .nav-link are targeted to override styles on the entire nav, and each individual nav link */
+
+#nav a.nav-link {
+    color:  #303841;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    max-width: 100%;
+    border: 1px solid #303841;
+    margin: 0;
+    padding: 15px;   
+}
+
+/* each nav link in the nav bar is targeted to allow a darker color to appear when hovered over */
+
+
+#nav a.nav-link:hover {
+    background-color: #BA820B;
+}
+
+#nav a.nav-link:active {
+    color: #eeeeee;
+}
+
+/* main element and class of main must be targeted in order to set width of the entire main section of content */
+
+main#main {
+    max-width: 100%;      
+}
+
+/* section element must be targeted in addition to class of home, about and contact, in order to change the style and background color on all of these sections */
+
+section#home, section#about, section#contact {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Dosis', sans-serif;
+    background-color: #4C5F6C; 
+}
+
+/* h1 must be targeted in addition to page title */
+
+h1.page-title {
+    color: #eeeeee;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+/* p must be targeted in addition to .home, .about, .contact to change the styles for all paragraphs */
+
+.home p, .contact p, .about p {
+    color: #eeeeee; 
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+section#about {
+    background-color: #303841;
+}
+
+/* display set to none to hide the image */
+
+img.about-image {
+    display: none;
+}
+
+/* h2 and .section-title targeted to change style of About Me header */
+
+h2.section-title {
+    padding-bottom: 15px;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+/* form and .contact-form targeted to change the style of the entire contact form */
+
+form.contact-form {
+    max-width: 90%;
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-top: 40px;      
+}
+
+/* elements of input and textarea are targeted with .contact-form-input to change the styling of the text boxes of the contact form */
+
+input.contact-form-input { 
+    border-style: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+textarea.contact-form-input {
+    padding: 20px;
+    border-style: none;
+    border-radius: 8px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* styling applied to the labels for the text areas in the contact form (Name, Email, Message) */
+
+label.contact-form-label {
+    font-size: 15px;
+    color:  #303841;
+}
+
+/* styling on the submit button of the contact form */
+
+button[type=submit]{
+    background-color: #303841;
+    width: 100%;
+    border-style: none;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer; 
+    color: #eeeeee;
+}
+
+/* only footer had to be targeted, as there was no previous styling applied */
+
+footer {
+    background-color: #eeeeee;
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #303841;
+    padding: 10px;   
+}
+
+/* styling for first breakpoint (650px), which is tablet view */
+
+@media(min-width: 650px) {
+    /* flex is applied to nav to have it display in a row across browser width, as opposed to column nav used in mobile */
+    nav#nav {
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #nav a.nav-link {
+        flex: 1 1 100%;
+        font-size: 22px;
+    }
+
+   .home p, .contact p, .about p {
+        line-height: 25px;
+        font-size: 18px;
+        width: 80%;
+    } 
+
+    form.contact-form {
+        width: 80%;
+    }
+
+    label.contact-form-label {
+        font-size: 18px;
+    }
+
+    /* width of button is now changed from % to px as it no longer needs to span entire width as it previously did in mobile */
+
+    button[type=submit] {
+        width: 150px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+/* styling for second breakpoint (960px) which is desktop view */
+
+@media(min-width: 960px) {
+    #nav a.nav-link {
+        font-size: 25px;
+    }
+
+    section#home {
+        padding-bottom: 35px;
+    }
+
+    .home p, .contact p, .about p {
+        width: 70%;
+    }
+
+    h1.page-title {
+        font-size: 35px;
+    }
+
+    section#about {
+        padding-top: 35px;
+        padding-bottom: 35px; 
+    }
+
+    h2.section-title {
+        font-size: 35px;
+    }
+
+    section#contact {
+        padding-top: 35px;        
+    }
+
+    /* grid has been used to style the contact form at the largest breakpoint */
+
+    form.contact-form {
+        width: 70%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        display: grid;
+        /* measurement of fr is used to have the Name and Email text areas each take up 1fr (1 fraction) of the available space on the first line */
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;  
+    }
+
+    /* nth:child(3) is targeted below to target only the Message label and text area in the contact form */
+
+    /* grid-column is used instead of using both grid-column-start, and grid-column-end. "1/3" is used meaning that the the Message item will start on column line 1, and span across and end on column line 3 */
+
+    .contact-form-section:nth-child(3) {
+        grid-column: 1/3; 
+    }
+
+    label.contact-form-label {
+        font-size: 22px;
+    }
+      
+    button[type=submit] {
+        font-size: 20px;
+        width: 180px;
+        text-align: center;
+    }
+}
