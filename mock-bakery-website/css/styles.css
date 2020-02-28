@@ -183,6 +183,7 @@ figure img {
     margin-top: 1.2rem;
 }
 
+
 figcaption {
     font-family: 'Gochi Hand', 'Century Gothic', cursive;
     color: #eb9532;
@@ -379,6 +380,12 @@ button[type=submit] {
 
     figure {
         margin: 1rem;
+    }
+
+    figure img {
+        width: 20vw;
+        margin: auto;
+        margin-bottom: 1.5rem;
     }
 
     .products-1 {
