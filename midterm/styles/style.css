@@ -245,6 +245,7 @@ button {
 .footer {
     background-color: #3C3B3A;
     color: #F2F2F2;
+    padding-bottom: 32px;
 }
 
 .footer p {
@@ -467,6 +468,144 @@ button {
     color: #3C3B3A;
 }
 
+.thank-you-images {
+    width: 80%;
+    margin: auto;
+}
 
+.thank-you-images img:nth-child(1) {
+    width: 301px;    
+}
 
+.thank-you-images img:nth-child(2) {
+    width: 202px;
+}
+
+.thank-you-images img:nth-child(3) {
+    width: 220px;
+} 
+
+.thank-you-images img:nth-child(4) {
+    width: 152px;
+}
+
+.contact-we-want {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-we-want h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.contact-we-want p {
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.contact-we-want img {
+    width: 302px;
+    margin: auto;
+}
+
+.contact-form form {
+    background-color: #26A682;
+    border: hidden;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 40px;  
+}
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-form h2 {
+    color: #F2F2F2;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 49px;
+    padding-bottom: 10px;
+}
+
+.contact-form label {
+    color: #F2F2F2;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+input[type=text]  {
+    font-family: 'Raleway', sans-serif;  
+    width: 100%;
+    background-color: #F4F4F5;
+    font-size: 16px;
+    color: #707070;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: hidden;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+textarea[type=text] {
+    font-family: 'Raleway', sans-serif;  
+    width: 100%;
+    background-color: #F4F4F5;
+    font-size: 16px;
+    color: #707070;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    resize: none;
+}
+
+.contact-form form button {
+    width: 100%;
+    background-color: #3C3B3A;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: hidden;
+    border-radius: 30px;
+}
+
+.contact-location {
+    color: #3C3B3A;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-location h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-location h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-location p {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.map {
+    margin-top: 40px;
+}
 
