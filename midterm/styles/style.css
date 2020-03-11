@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my CSS begins here */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: #3C3B3A;
+    text-align: center;
+    font-size: 16px;
+}
+
+.header img {
+    width: 88px;
+}
+
+.navigation nav ul li {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: #F2F2F2;    
+}
+
+a:link, a:visited{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-section-one {
+    width: 80%;
+    margin: auto;
+}
+
+.home-section-one h1 {
+    color: #3C3B3A;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.home-section-one p {
+    color: #3C3B3A;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.home-section-one img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+}
+
+.icons img {
+    width: 40px;
+    margin: 0;
+}
+
+.icons p {
+    font-size: 17px;
+    color: #26A682;
+}
+
+button {
+    width: 100%;
+    background-color: #26A682;
+    color: #F2F2F2;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    border: hidden;
+    border-radius: 50px;
+}
+
+.home-image-one img {
+    width: 100vw;
+}
+
+.home-section-two {
+    width: 80%;
+    margin: auto;
+}
+
+.home-section-two h2 {
+    color: #3C3B3A;
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.home-section-two h3 {
+    font-size: 24px;
+    color: #26A682;;
+    margin-bottom: 10px;
+}
+
+.home-section-two p {
+    color: #3C3B3A;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.learn-more button {
+    font: 20px;
+    width: 50%;    
+}
+
+.home-section-three {
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+}
+
+.president {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 600;
+}
+
+.president img {
+    width: 175px;
+    margin: auto;
+    border: 5px solid #F2F2F2;
+    border-radius: 100px;
+    margin-top: 30px;    
+    margin-bottom: 28px;
+}
+
+.home-section-three p {
+    width: 80%;
+    margin: auto;
+    line-height: 35px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.home-image-two img {
+    width: 100%;
+}
+
+.home-section-four {
+    width: 80%;
+    margin: auto;
+}
+
+.home-section-four h2 {
+    color: #3C3B3A;
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.home-section-four h3 {
+    font-size: 24px;
+    color: #26A682;;
+    margin-bottom: 10px;
+}
+
+.home-section-four p {
+    color: #3C3B3A;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.footer {
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+}
+
+.footer p {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.icon-list ul {
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: 25px 25px 25px 30px;
+    grid-column-gap: 12px;
+    justify-content: center;   
+}
+
+.footer figure img{
+    width: 22px;
+}
+
+.footer figure figcaption {
+    font-size: 9px;
+}
+
+/* CSS for About page */
+
+.about-section-one {
+    width: 80%;
+    margin: auto;
+}
+
+.about-section-one h1 {
+    color: #3C3B3A;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.about-section-one p {
+    color: #3C3B3A;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.about-section-one img {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*
+
+.about-container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*/
+
+.about-green-image .centered img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.about-section-two-text {
+    width: 80%;
+    margin: auto;
+    color: #3C3B3A;
+}
+
+.about-section-two-text h2 {
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.about-section-two-text p {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.about-service-image .centered {
+    margin-top: 25px;
+}
+
+.about-service-image .centered img {
+    width: 100%;
+    margin-bottom: 5px;    
+}
+
+.about-section-three-text {
+    width: 80%;
+    margin: auto;
+    color: #3C3B3A;
+}
+
+.about-section-three-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-section-three-text h3 {
+    font-size: 24px;
+    color: #26A682;
+}
+
+.about-section-three-text p {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.competitive {
+    background-color: #F2F2F2;
+}
+
+.competitive-text {
+    width: 80%;
+    margin: auto;
+    color: #3C3B3A;
+}
+
+.competitive-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.competitive-text h3 {
+    font-size: 24px;
+    color: #26A682;
+}
+
+.competitive-text p {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.break {
+    background-color: #3C3B3A;
+    text-align: center;
+}
+
+.break p {
+    font-size: 18px;
+    color: #F2F2F2;
+    padding-top: 24px;
+    padding-bottom: 17px;
+}
+
+.break button {
+    font-size: 20px;
+    padding: 6px 22px 6px 22px;
+    width: 140px;
+}
+
+.about-newyear {
+    width: 80%;
+    margin: auto;
+    color: #3C3B3A;
+}
+
+.about-newyear h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-newyear h3 {
+    font-size: 24px;
+    color: #26A682;
+}
+
+.about-newyear p {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.about-climbing {
+    background-color: #F2F2F2;
+}
+
+.about-climbing-text {
+    width: 80%;
+    margin: auto;
+    color: #3C3B3A;
+}
+
+.about-climbing-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-climbing-text h3 {
+    font-size: 24px;
+    color: #26A682;
+}
+
+.about-climbing-text p {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.thank-you {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.thank-you h2 {
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: bold;
+    color: #3C3B3A;
+}
+
+
+
+
