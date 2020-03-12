@@ -58,6 +58,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* setting styles to have header and navigation elements display block in mobile */
+
 .header {
     padding-top: 23px;
     padding-bottom: 23px;
@@ -65,6 +67,8 @@ body {
     text-align: center;
     font-size: 16px;
 }
+
+/* styling for ARC logo */
 
 .header img {
     width: 88px;
@@ -76,6 +80,8 @@ body {
     color: #F2F2F2;    
 }
 
+/* styling for specific navigation elements */
+
 a:link, a:visited{
     color: #F2F2F2;
     text-decoration: none;
@@ -86,12 +92,14 @@ a:hover, a:active {
     font-weight: bold;
 }
 
-.home-section-one {
+/* styling for first sections of both Home and About page, as they have the same attributes for h1 and p */
+
+.discover-wrap, .construction {
     width: 80%;
     margin: auto;
 }
 
-.home-section-one h1 {
+.discover-wrap h1, .construction h1 {
     color: #3C3B3A;
     font-size: 40px;
     font-weight: bold;
@@ -99,17 +107,21 @@ a:hover, a:active {
     margin-bottom: 20px;
 }
 
-.home-section-one p {
+.discover-wrap p, .construction p {
     color: #3C3B3A;
     font-size: 20px;
     line-height: 35px;
     margin-bottom: 15px;
 }
 
-.home-section-one img {
+/* setting initial sizing for discover vector image */
+
+.discover-wrap-two .discover-img img {
     width: 300px;
     margin-bottom: 20px;
 }
+
+/* setting activity icons to display in grid format for mobile */
 
 .icons {
     display: grid;
@@ -117,15 +129,18 @@ a:hover, a:active {
     justify-content: space-around;
 }
 
-.icons img {
-    width: 40px;
-    margin: 0;
+.bowling, .climbing, .fitness, .basketball {
+    text-align: center;
 }
+
+/* font sizing and color for icon labels */
 
 .icons p {
     font-size: 17px;
     color: #26A682;
 }
+
+/* styling for Get Started button */
 
 button {
     width: 100%;
@@ -140,36 +155,14 @@ button {
     padding-bottom: 6px;
     border: hidden;
     border-radius: 50px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
-.home-image-one img {
+.graduation img {
     width: 100vw;
 }
 
-.home-section-two {
-    width: 80%;
-    margin: auto;
-}
-
-.home-section-two h2 {
-    color: #3C3B3A;
-    font-size: 32px;
-    font-style: italic;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.home-section-two h3 {
-    font-size: 24px;
-    color: #26A682;;
-    margin-bottom: 10px;
-}
-
-.home-section-two p {
-    color: #3C3B3A;
-    font-size: 16px;
-    line-height: 35px;
-}
+/* Learn More button is displayed with flex to have it anchor to right side of container */
 
 .learn-more {
     display: flex;
@@ -178,10 +171,12 @@ button {
 
 .learn-more button {
     font: 20px;
-    width: 50%;    
+    width: 50%;   
 }
 
-.home-section-three {
+/* styling to president section */
+
+.president {
     background-color: #3C3B3A;
     color: #F2F2F2;
 }
@@ -192,9 +187,10 @@ button {
     justify-content: center;
     text-align: center;
     font-size: 24px;
-    line-height: 35px;
-    font-weight: 600;
+    line-height: 35px;   
 }
+
+/* specific style attributes like border-radius are used on president image to display in a circle */
 
 .president img {
     width: 175px;
@@ -205,7 +201,14 @@ button {
     margin-bottom: 28px;
 }
 
-.home-section-three p {
+/* font-weight must be used here as font is neither regular or bold, but has a weight that is in between, therefore a number must be used to determine weight */
+
+.president h3 {
+    font-weight: 600;
+}
+
+.president p {
+    font-size: 16px;
     width: 80%;
     margin: auto;
     line-height: 35px;
@@ -217,12 +220,12 @@ button {
     width: 100%;
 }
 
-.home-section-four {
+.entertainment, .discover {
     width: 80%;
     margin: auto;
-}
+} 
 
-.home-section-four h2 {
+.entertainment h2, .discover h2 {
     color: #3C3B3A;
     font-size: 32px;
     font-style: italic;
@@ -230,13 +233,13 @@ button {
     margin-bottom: 10px;
 }
 
-.home-section-four h3 {
+.entertainment h3, .discover h3 {
     font-size: 24px;
     color: #26A682;;
     margin-bottom: 10px;
 }
 
-.home-section-four p {
+.entertainment p, .discover p  {
     color: #3C3B3A;
     font-size: 16px;
     line-height: 35px;
@@ -272,37 +275,16 @@ button {
 
 /* CSS for About page */
 
-.about-section-one {
-    width: 80%;
-    margin: auto;
-}
-
-.about-section-one h1 {
-    color: #3C3B3A;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-.about-section-one p {
-    color: #3C3B3A;
-    font-size: 20px;
-    line-height: 35px;
-    margin-bottom: 15px;
-}
-
-.about-section-one img {
+.construction img {
     width: 300px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-/*
-
 .about-container {
     position: relative;
     text-align: center;
+    color: hotpink;
 }
 
 .centered {
@@ -310,83 +292,67 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 50px;
 }
 
-*/
-
-.about-green-image .centered img {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.about-section-two-text {
+.who-what-where {
     width: 80%;
     margin: auto;
     color: #3C3B3A;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.about-section-two-text h2 {
+.who-what-where h2 {
     font-size: 32px;
     font-style: italic;
-    margin-top: 20px;
 }
 
-.about-section-two-text p {
+.who-what-where p {
     font-size: 16px;
     line-height: 35px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
-.about-service-image .centered {
-    margin-top: 25px;
-}
-
-.about-service-image .centered img {
+.services .centered img {
     width: 100%;
     margin-bottom: 5px;    
 }
 
-.about-section-three-text {
+.resto, .newyear {
     width: 80%;
     margin: auto;
     color: #3C3B3A;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.about-section-three-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.about-section-three-text h3 {
-    font-size: 24px;
-    color: #26A682;
-}
-
-.about-section-three-text p {
-    font-size: 15px;
-    line-height: 35px;
-}
-
-.competitive {
+.competitive, .about-climbing {
     background-color: #F2F2F2;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.competitive-text {
+.competitive-text, .newyear, .about-climbing-text {
     width: 80%;
     margin: auto;
     color: #3C3B3A;
 }
 
-.competitive-text h2 {
+.resto h2, .competitive-text h2, .newyear h2, .about-climbing-text h2 {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.competitive-text h3 {
+.resto h3, .competitive-text h3, .newyear h3, .about-climbing-text h3  {
     font-size: 24px;
     color: #26A682;
+    margin-bottom: 10px;
 }
 
-.competitive-text p {
+.resto p, .competitive-text p, .newyear p, .about-climbing-text p {
     font-size: 15px;
     line-height: 35px;
 }
@@ -407,52 +373,6 @@ button {
     font-size: 20px;
     padding: 6px 22px 6px 22px;
     width: 140px;
-}
-
-.about-newyear {
-    width: 80%;
-    margin: auto;
-    color: #3C3B3A;
-}
-
-.about-newyear h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.about-newyear h3 {
-    font-size: 24px;
-    color: #26A682;
-}
-
-.about-newyear p {
-    font-size: 15px;
-    line-height: 35px;
-}
-
-.about-climbing {
-    background-color: #F2F2F2;
-}
-
-.about-climbing-text {
-    width: 80%;
-    margin: auto;
-    color: #3C3B3A;
-}
-
-.about-climbing-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.about-climbing-text h3 {
-    font-size: 24px;
-    color: #26A682;
-}
-
-.about-climbing-text p {
-    font-size: 15px;
-    line-height: 35px;
 }
 
 .thank-you {
@@ -607,5 +527,107 @@ textarea[type=text] {
 
 .map {
     margin-top: 40px;
+}
+
+.back-to-top {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    text-align: center;
+}
+
+/* CSS for Tablet breakpoint */
+
+
+@media (min-width: 750px) {
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        
+    }
+
+    header nav {
+        grid-column-start: 8;
+        grid-column-end: 11;   
+    }
+
+    /*
+
+    .header header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;    
+    }
+
+    .navigation nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    */ 
+
+    .home-section-one h1 {
+        color: #3C3B3A;
+        font-size: 72px;
+        font-weight: bold;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        line-height: 85px;
+    }
+
+    .home-section-one p {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 220px;
+    }
+
+    .discover-one .discover-img img {
+        width: 350px;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-around;
+    }
+
+    .discover {
+        margin-top: 42px;
+        margin-bottom: 41px;
+    }
+
+    .entertainment h2, .discover h2 {
+        font-size: 40px;
+        margin-bottom: 11px;
+    }
+    
+    .entertainment h3, .discover h3 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    
+    .entertainment p, .discover p  {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .learn-more button {
+        font: 27px;
+        max-width: 230px;  
+    }
+
+
+
+
 }
 
