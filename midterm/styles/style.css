@@ -629,6 +629,7 @@ textarea[type=text] {
 
     .bar-img-sm, .bar-img-lg {
         display: block;
+        width: 100%;
     }
 
 

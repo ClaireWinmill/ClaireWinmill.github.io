@@ -31,7 +31,22 @@
             <img src="images/construction.svg" alt="Vector Construction Graphic">
         </div>
         <div class="about-container">
-                <img src="images/about.jpg" alt="students sitting on staircase in college">
+
+                <div class="about-img">
+                        <picture>
+                                <source media="(max-width: 749px)"
+                                srcset="images/about-375_x_200.jpg 375w, images/about-475_x_300.jpg 475w, images/about-575_x_400.jpg 575w">
+        
+                                <source media="(max-width: 960px)"
+                                srcset="images/about-813_x_337.jpg 813w, images/about-913_x_437.jpg 913w, images/about-1013_x_537.jpg 1013w">
+                                
+                                <source media="(min-width: 960px)"
+                                srcset="images/about-1720_x_50.jpg 1720w, images/about-1820_x_150.jpg 1820w, images/about-1920_x_250.jpg 1920w">
+        
+                                <img src="images/about.jpg" alt="students sitting on staircase in college">
+                        </picture>
+                        <div class="centered">About</div>
+                </div>
                 <div class="centered">About</div>
         </div>
 
@@ -50,10 +65,10 @@
                 <div class="centered">Services</div>
         </div>
 
-        <div class="services-img">
+        <div class="about-img">
                 <picture>
                         <source media="(max-width: 749px)"
-                        srcset="images/services-375_x_200.jpg 375w, images/services-475_x_300.jpg 475w, images/services-575_x_400.jpg 575w">
+                        srcset="images/services-375_x_200.jpg 375w, images/about-475_x_300.jpg 475w, images/about-575_x_400.jpg 575w">
 
                         <source media="(max-width: 960px)"
                         srcset="images/entertainment-813_x_337.jpg 813w, images/entertainment-913_x_437.jpg 913w, images/entertainment-1013_x_537.jpg 1013w">
@@ -63,19 +78,19 @@
 
                         <img src="images/services.jpg" alt="closeup of latte being made">
                 </picture>
-                <div class="centered">Services</div>
+                <div class="centered">About</div>
         </div>
 
         <div class="bar">
-            <div class="bar-img-sm">
-                <source media="(min-width: 750px)"
-                srcset="images/bar-218_x_375.jpg 218w, images/bar-318_x_475.jpg 318w, images/bar-418_x_575.jpg 418w">
-                <img src="images/bar.jpg" alt="bar photo">
-            </div>
-            <div class="bar-img-lg">
+            <div class="bar-img">
+                <picture>
+                    <source media="(max-width: 960px)"
+                    srcset="images/bar-218_x_375.jpg 218w, images/bar-318_x_475.jpg 318w, images/bar-418_x_575.jpg 418w">
+              
                     <source media="(min-width: 960px)"
                     srcset="images/bar-813_x_337.jpg 813w, images/bar-913_x_437.jpg 913w, images/bar-1013_x_537.jpg 1013w">
                     <img src="images/bar.jpg" alt="bar photo">
+                </picture>
             </div>
             <div class="resto">
                     <h2>Need a break?</h2>
@@ -85,11 +100,6 @@
 
         </div>
 
-        <div class="resto">
-            <h2>Need a break?</h2>
-            <h3>Restaurant & Lounge</h3>
-            <p>will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes! </p>
-        </div>
         <div class="competitive">
             <div class="competitive-text">
                 <h2>Competitive Friends?</h2>
