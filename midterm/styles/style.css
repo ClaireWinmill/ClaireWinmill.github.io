@@ -49,6 +49,10 @@ table {
 
 /* my CSS begins here */
 
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 * {
     box-sizing: border-box;
@@ -159,7 +163,8 @@ button {
 }
 
 .graduation img {
-    width: 100vw;
+    display: block;
+    width: 100%;
 }
 
 /* Learn More button is displayed with flex to have it anchor to right side of container */
@@ -319,6 +324,11 @@ button {
     width: 100%;
     margin-bottom: 5px;    
 }
+
+.bar-img-sm, .bar-img-lg {
+    display: none;
+}
+
 
 .resto, .newyear {
     width: 80%;
@@ -546,32 +556,23 @@ textarea[type=text] {
 
 @media (min-width: 750px) {
 
-    header {
+    .navigation nav {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
-    header nav {
-        grid-column-start: 8;
-        grid-column-end: 11;   
-    }
-
-    /*
-
-    .header header {
+    .navigation img {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;    
+        justify-content: flex-start;
     }
 
-    .navigation nav ul {
+    .nav-options {
         display: flex;
         justify-content: flex-end;
     }
-
-    */ 
-
     .home-section-one h1 {
         color: #3C3B3A;
         font-size: 72px;
@@ -624,6 +625,10 @@ textarea[type=text] {
     .learn-more button {
         font: 27px;
         max-width: 230px;  
+    }
+
+    .bar-img-sm, .bar-img-lg {
+        display: block;
     }
 
 

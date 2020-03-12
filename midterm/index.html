@@ -11,10 +11,10 @@
     <div class="wrapper">
         <div class="header">
         <header>
-            <img src="images/logo.svg" alt="ARC logo">
             <div class="navigation">
                     <nav>
-                        <ul>
+                        <img src="images/logo.svg" alt="ARC logo">
+                        <ul class="nav-options">
                             <li><a class="active" href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -52,7 +52,7 @@
             
         <div class="discover-wrap-two">
 
-                <button class="button" type="button">Get Started</button>
+            <button class="button" type="button">Get Started</button>
             <div class=discover-img>
                 <img src="images/discover.svg" alt="Vector Graphic Figure sitting on books">
             </div>
@@ -62,9 +62,11 @@
             <div class="graduation">
                     <picture>
                             <source media="(max-width: 749px)"
-                            srcset="images/school-375_x_200.jpg 375w">
-                            <source media="(min-width: 750px)"
-                            srcset="images/school-768_x_200.jpg 768w">
+                            srcset="images/school-375_x_200.jpg 375w, images/school-475_x_300.jpg 475w">
+
+                            <source media="(max-width: 960px)"
+                            srcset="images/school-375_x_200.jpg 375w, images/school-475_x_300.jpg 475w, images/school-768_x_200.jpg 768w">
+                            
                             <source media="(min-width: 960px)"
                             srcset="images/school-813_x_337.jpg 813w">
 
@@ -89,16 +91,17 @@
                     <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."</p>
             </div>
             <div class="entertainment-img">
-
                     <picture>
                             <source media="(max-width: 749px)"
-                            srcset="images/entertainment-375_x_200.jpg">
-                            <source media="(min-width: 750px)"
-                            srcset="images/entertainment-768_x_200.jpg">
-                            <source media="(min-width: 960px)"
-                            srcset="images/entertainment-813_x_337.jpg">
+                            srcset="images/entertainment-375_x_200.jpg 375w, images/entertainment-475_x_300.jpg 475w">
 
-                            <img src="images/entertainment-813_x_337.jpg" alt="students enjoying drinks">
+                            <source media="(max-width: 960px)"
+                            srcset="images/entertainment-375_x_200.jpg 375w, images/entertainment-475_x_300.jpg 475w, images/entertainment-768_x_200.jpg 768w">
+                            
+                            <source media="(min-width: 960px)"
+                            srcset="images/entertainment-813_x_337.jpg 813w">
+
+                            <img src="images/entertainment.jpg" alt="students enjoying drinks">
                     </picture>
             </div>
             <div class="entertainment">
