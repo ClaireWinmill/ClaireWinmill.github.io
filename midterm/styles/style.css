@@ -96,6 +96,10 @@ a:hover, a:active {
     font-weight: bold;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /* styling for first sections of both Home and About page, as they have the same attributes for h1 and p */
 
 .discover-wrap, .construction {
@@ -156,7 +160,7 @@ button {
 
 }
 
-.discover-wrap-two button {
+.discover-wrap button {
     width: 100%;
     font-size: 32px;
     margin-top: 30px;
@@ -167,7 +171,7 @@ button {
 
 /* setting initial sizing for discover vector image */
 
-.discover-wrap-two .discover-img img {
+.discover-img img {
     display: block;
     width: 300px;
     margin: auto;
@@ -224,7 +228,7 @@ button {
 
 /* specific style attributes like border-radius are used on president image to display in a circle */
 
-.president img {
+.president-img img {
     width: 175px;
     margin: auto;
     border: 5px solid #F2F2F2;
@@ -239,13 +243,12 @@ button {
     font-weight: 600;
 }
 
-.president p {
+.president-text {
     font-size: 16px;
     width: 80%;
     margin: auto;
     line-height: 35px;
     padding-top: 20px;
-    padding-bottom: 50px;
 }
 
 .home-image-two img {
@@ -256,6 +259,10 @@ button {
     width: 80%;
     margin: auto;
 } 
+
+.entertainment-img img {
+    width: 100%;
+}
 
 .entertainment h2, .discover h2 {
     color: #3C3B3A;
@@ -281,6 +288,7 @@ button {
     background-color: #3C3B3A;
     color: #F2F2F2;
     padding-bottom: 32px;
+    margin-top: 51px;
 }
 
 .footer p {
@@ -321,6 +329,10 @@ button {
     font-weight: bold;
 }
 
+.green-img img {
+    width: 100%;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -354,10 +366,9 @@ button {
     margin-bottom: 5px;    
 }
 
-.bar-img-sm, .bar-img-lg {
+.bar-img, .competitive-img {
     display: none;
 }
-
 
 .resto, .newyear {
     width: 80%;
@@ -428,20 +439,27 @@ button {
 }
 
 .thank-you-images {
-    width: 80%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .thank-you-images img:nth-child(1) {
-    width: 301px;    
+    width: 301px; 
+    margin-bottom: 44px;   
 }
 
 .thank-you-images img:nth-child(2) {
     width: 202px;
+    margin-bottom: 31px;
 }
 
 .thank-you-images img:nth-child(3) {
     width: 220px;
+    margin-bottom: 72px;
 } 
 
 .thank-you-images img:nth-child(4) {
@@ -581,6 +599,12 @@ textarea[type=text] {
     text-align: center;
 }
 
+.map iframe {
+    height: 250px;
+    width: 100%;
+    border: 0;
+}
+
 /* CSS for Tablet breakpoint */
 
 
@@ -632,7 +656,7 @@ textarea[type=text] {
         justify-content: space-around;
     }
 
-    .discover-wrap-two button {
+    .discover-wrap button {
         width: 300px;
         display: block;
         margin: 40px auto 40px auto;
@@ -668,14 +692,178 @@ textarea[type=text] {
         max-width: 230px;  
     }
 
-    .bar {
+    .president {
         display: grid;
-        grid-template-columns: 35% 65%;
-        grid-column-gap: 5%;
+        grid-template-columns: 1fr 2fr;
+        grid-row: 1/ 2 ;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .bar-img
+    .president-img {
+        
+    }
 
+    .president-img img {
+        margin-top: 20px;
+    }
+
+    .president-text {
+        font-size: 24px;
+        grid-column: 2 / 3;
+        
+    }
+
+    .construction img {
+        width: 575px;
+    }
+
+    .bar-img, .competitive-img  {
+        display: block;
+    }
+
+    .bar-img img, .competitive-img img {
+        width: 100%;
+    }
+
+    .competitive {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .competitive-img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .bar, .competitive {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr;
+    }
+
+    .bar {
+        margin: 3rem 0 3rem 3rem;
+    }
+
+    .contact-we-want img {
+        width: 452px;
+    }
+
+    .map iframe {
+        height: 500px;
+        width: 100%;
+        border: 0;
+    }
+
+
+}
+
+
+
+    @media (min-width: 960px) {
+
+        .icons p {
+            line-height: 20px;
+        }
+
+        .discover-wrap {
+            margin-top: 95px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(1 1fr);
+        }
+
+        .discover-img img {
+            width: 50vw;
+        }
+
+        .president-text {
+            padding-bottom: 50px;
+        }
+
+        .who-what-where {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-template-rows: repeat(1, auto);
+            padding-top: 225px;
+            padding-bottom: 225px;
+        }
+
+        .who, .what, .where {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        .who-what-where h2 {
+            font-size: 40px;
+        }
+        
+        .who-what-where p {
+            font-size: 18px;
+        }
+
+        .bar {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
+            margin-left: 4rem;
+        }
+
+        .thank-you {
+            width: 100%;
+            margin: auto;
+        }
+
+        .thank-you h2 {
+            font-size: 72px;
+            line-height: 85px;
+            width: 40%;
+            margin: auto;
+        }
+
+        .thank-you-images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 105px;
+            padding-right: 105px;
+            
+        }
+
+        .map iframe {
+            height: 500px;
+            max-width: 812px;
+            border: 0;
+        }
+
+        .contact-container {
+            margin-top: 95px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(1 1fr);
+        }
+
+        .contact-container-2 {
+            margin-top: 95px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(1 1fr);
+        }
+
+        .contact-we-want h1 {
+            margin-top: 0;
+        }
+
+        .contact-we-want img {
+            width: 30vw;
+        }
+
+        .contact-form form {
+            margin-bottom: 0;
+        }
 
 
 
