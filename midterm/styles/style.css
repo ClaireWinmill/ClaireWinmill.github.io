@@ -366,7 +366,7 @@ button {
     margin-bottom: 5px;    
 }
 
-.bar-img, .competitive-img {
+.bar-img, .competitive-img, .climbing-img, .fitness-img {
     display: none;
 }
 
@@ -718,11 +718,11 @@ textarea[type=text] {
         width: 575px;
     }
 
-    .bar-img, .competitive-img  {
+    .bar-img, .competitive-img, .climbing-img, .fitness-img {
         display: block;
     }
 
-    .bar-img img, .competitive-img img {
+    .bar-img img, .competitive-img img, .climbing-img img, .fitness-img img {
         width: 100%;
     }
 
@@ -736,7 +736,7 @@ textarea[type=text] {
         grid-row: 1;
     }
 
-    .bar, .competitive {
+    .bar, .competitive, .about-climbing, .fitness-img {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 1fr;
