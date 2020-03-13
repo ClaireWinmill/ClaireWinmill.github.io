@@ -130,7 +130,7 @@ a:hover, a:active {
     justify-content: space-around;
 }
 
-.bowling, .climbing, .fitness, .basketball {
+.bowling-icon, .climbing-icon, .fitness-icon, .basketball-icon {
     text-align: center;
 }
 
@@ -378,31 +378,31 @@ button {
     padding-bottom: 25px;
 }
 
-.competitive, .about-climbing {
+.competitive, .climbing {
     background-color: #F2F2F2;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.competitive-text, .newyear, .about-climbing-text {
+.competitive-text, .newyear, .climbing-text {
     width: 80%;
     margin: auto;
     color: #3C3B3A;
 }
 
-.resto h2, .competitive-text h2, .newyear h2, .about-climbing-text h2 {
+.resto h2, .competitive-text h2, .newyear h2, .climbing-text h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.resto h3, .competitive-text h3, .newyear h3, .about-climbing-text h3  {
+.resto h3, .competitive-text h3, .newyear h3, .climbing-text h3  {
     font-size: 24px;
     color: #26A682;
     margin-bottom: 10px;
 }
 
-.resto p, .competitive-text p, .newyear p, .about-climbing-text p {
+.resto p, .competitive-text p, .newyear p, .climbing-text p {
     font-size: 15px;
     line-height: 35px;
 }
@@ -606,8 +606,8 @@ textarea[type=text] {
 }
 
 .bounce-top {
-	-webkit-animation: bounce-top 0.9s both;
-	        animation: bounce-top 0.9s both;
+	-webkit-animation: bounce-top 1.9s both;
+	        animation: bounce-top 1.9s both;
 }
 
 /* ----------------------------------------------
@@ -827,18 +827,13 @@ textarea[type=text] {
         padding-bottom: 40px;
     }
 
-    .president-img {
-        
-    }
-
     .president-img img {
         margin-top: 20px;
     }
 
     .president-text {
         font-size: 24px;
-        grid-column: 2 / 3;
-        
+        grid-column: 2 / 3;    
     }
 
     .construction img {
@@ -853,23 +848,23 @@ textarea[type=text] {
         width: 100%;
     }
 
-    .competitive {
+    .competitive, .climbing {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    .competitive-img {
+    .competitive-img, .climbing-img {
         grid-column: 2;
         grid-row: 1;
     }
 
-    .bar, .competitive, .about-climbing, .fitness-img {
+    .bar, .competitive, .climbing, .fitness {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
     }
 
-    .bar {
+    .bar, .fitness {
         margin: 3rem 0 3rem 3rem;
     }
 
