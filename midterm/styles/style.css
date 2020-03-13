@@ -118,13 +118,6 @@ a:hover, a:active {
     margin-bottom: 15px;
 }
 
-/* setting initial sizing for discover vector image */
-
-.discover-wrap-two .discover-img img {
-    width: 300px;
-    margin-bottom: 20px;
-}
-
 /* setting activity icons to display in grid format for mobile */
 
 .icons {
@@ -144,10 +137,10 @@ a:hover, a:active {
     color: #26A682;
 }
 
+
 /* styling for Get Started button */
 
 button {
-    width: 100%;
     background-color: #26A682;
     color: #F2F2F2;
     font-weight: bold;
@@ -160,6 +153,29 @@ button {
     border: hidden;
     border-radius: 50px;
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+.discover-wrap-two button {
+    width: 100%;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+/* setting initial sizing for discover vector image */
+
+.discover-wrap-two .discover-img img {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.scroll {
+    display: none;
 }
 
 .graduation img {
@@ -175,8 +191,19 @@ button {
 }
 
 .learn-more button {
-    font: 20px;
-    width: 50%;   
+    font: 27px;
+    width: 50%;
+    background-color: #26A682;
+    color: #F2F2F2;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    border: hidden;
+    border-radius: 50px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);   
 }
 
 /* styling to president section */
@@ -281,15 +308,17 @@ button {
 /* CSS for About page */
 
 .construction img {
+    display: block;
     width: 300px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-.about-container {
+.green {
     position: relative;
     text-align: center;
-    color: hotpink;
+    color: #F2F2F2;
+    font-weight: bold;
 }
 
 .centered {
@@ -437,6 +466,7 @@ button {
 }
 
 .contact-we-want img {
+    display: block;
     width: 302px;
     margin: auto;
 }
@@ -556,23 +586,27 @@ textarea[type=text] {
 
 @media (min-width: 750px) {
 
+    .header {
+        padding: 0;
+    }
     .navigation nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
+        align-items: center;
         padding-left: 50px;
         padding-right: 50px;
     }
 
-    .navigation img {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .nav-options {
+    .navigation ul {
         display: flex;
         justify-content: flex-end;
     }
+
+    .navigation ul li  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .home-section-one h1 {
         color: #3C3B3A;
         font-size: 72px;
@@ -592,14 +626,21 @@ textarea[type=text] {
         width: 220px;
     }
 
-    .discover-one .discover-img img {
-        width: 350px;
-    }
-
     .icons {
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-content: space-around;
+    }
+
+    .discover-wrap-two button {
+        width: 300px;
+        display: block;
+        margin: 40px auto 40px auto;
+    }
+
+    .scroll {
+        display: block;
+        margin: auto;
     }
 
     .discover {
@@ -627,10 +668,14 @@ textarea[type=text] {
         max-width: 230px;  
     }
 
-    .bar-img-sm, .bar-img-lg {
-        display: block;
-        width: 100%;
+    .bar {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-column-gap: 5%;
     }
+
+    .bar-img
+
 
 
 
