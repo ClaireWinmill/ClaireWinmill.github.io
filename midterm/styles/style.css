@@ -1054,9 +1054,12 @@ textarea[type=text] {
             
         }
 
+        .map {
+            margin-top: 0;
+        }
+
         .map iframe {
             height: 500px;
-            max-width: 812px;
             border: 0;
         }
 
