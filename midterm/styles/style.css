@@ -98,16 +98,21 @@ a:hover, a:active {
     font-weight: bold;
 }
 
+/* a font-weight of bold is used for to show the page that is currently active */
+
 .active {
     font-weight: bold;
 }
 
-/* styling for first sections of both Home and About page, as they have the same attributes for h1 and p */
+/* multiple elements are targeted together as they all require a width of 80% and margin:auto */
 
 .discover-wrap, .construction, .president-text, .entertainment, .discover, .who-what-where, .resto, .newyear, .resto, .competitive-text, .newyear, .climbing-text, .thank-you, .contact-we-want, .contact-form, .contact-location  {
     width: 80%;
     margin: auto;
 }
+
+
+/* multiple elements are targeted together as they all require a width of 80% and margin:auto */
 
 .discover-wrap h1, .construction h1, .discover-wrap p, .construction p, .entertainment h2, .discover h2, .entertainment p, .discover p, .who-what-where, .resto, .competitive-text, .newyear, .climbing-text, .thank-you h2, .contact-location, .home-section-one h1 {
     color: #3C3B3A;
@@ -117,6 +122,9 @@ a:hover, a:active {
     font-weight: bold;, 
 }
 
+.discover-wrap button, .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .contact-form form button, .map iframe {
+    width: 100%;
+}
 
 .discover-wrap h1, .construction h1 {
     font-size: 40px;
@@ -163,7 +171,20 @@ a:hover, a:active {
     border: hidden;
     border-radius: 50px;
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    opacity: 1;
+    animation-name: opacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* setting initial sizing for discover vector image */
@@ -181,15 +202,28 @@ a:hover, a:active {
 
 .graduation img {
     display: block;
-    width: 100%;
 }
 
 /* Learn More button is displayed with flex to have it anchor to right side of container */
 
 .learn-more {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 27px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 27px;
+        opacity: 1;
+        animation-name: opacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .learn-more a {
@@ -244,15 +278,6 @@ a:hover, a:active {
     line-height: 35px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.home-image-two img {
-    width: 100%;
-}
-
-
-.entertainment-img img {
-    width: 100%;
 }
 
 .entertainment h2, .discover h2 {
@@ -317,10 +342,6 @@ a:hover, a:active {
     color: #F2F2F2;
 }
 
-.green-img img {
-    width: 100%;
-}
-
 .centered {
     position: absolute;
     top: 50%;
@@ -347,7 +368,6 @@ a:hover, a:active {
 }
 
 .services .centered img {
-    width: 100%;
     margin-bottom: 5px;    
 }
 
@@ -395,8 +415,14 @@ a:hover, a:active {
 }
 
 .break button {
+    background-color: #26A682;
+    color: #F2F2F2;
+    text-align: center;
+    border: hidden;
+    border-radius: 50px;
     font-size: 20px;
     padding: 6px 22px 6px 22px;
+    margin-bottom: 24px;
 }
 
 .thank-you {
@@ -506,7 +532,6 @@ textarea[type=text] {
 }
 
 .contact-form form button {
-    width: 100%;
     background-color: #3C3B3A;
     color: #F2F2F2;
     font-size: 32px;
@@ -777,10 +802,8 @@ textarea[type=text] {
               transform: scale(1);
     }
   }
-  
 
     .scroll {
-        display: grid;
         display: grid;
         grid-template-columns: repeat(12, auto);
         justify-content: center;
@@ -878,28 +901,26 @@ textarea[type=text] {
 
     .break {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
-        align-items: center;   
+        align-items: center;  
+        padding-top: 30px;
+        padding-bottom: 30px; 
     }
 
     .break p {
         font-size: 24px;
         padding: 0;
-        justify-self: end;
-        
+        justify-self: end;    
     }
 
     .break a {
         justify-self: start;
-        margin-left: 2rem;
     }
 
     .break button {
         font-size: 24px;
     }
-
-    
 
     .contact-we-want img {
         width: 452px;
@@ -911,12 +932,7 @@ textarea[type=text] {
         border: 0;
     }
 
-    
-
-
 }
-
-
 
     @media (min-width: 960px) {
 
@@ -935,8 +951,39 @@ textarea[type=text] {
             width: 50vw;
         }
 
+        .disc-wrap-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+        }
+
+        .graduation {
+            justify-self: center;
+            margin-left: 2rem;
+        }
+
+        .discover {
+            justify-self: center;
+            align-items: center;
+        }
+
         .president-text {
             padding-bottom: 50px;
+        }
+
+        .disc-wrap-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+        }
+
+        .entertainment-img {
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: center;
+            margin-right: 2rem;
         }
 
         .who-what-where {
@@ -973,12 +1020,11 @@ textarea[type=text] {
         .break p {
             font-size: 24px;
             padding: 0;
-            justify-self: end;   
+            justify-self: center;;   
         }
     
         .break a {
             justify-self: start;
-            margin-left: 2rem;
         }
     
         .break button {
