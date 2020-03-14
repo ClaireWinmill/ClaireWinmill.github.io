@@ -111,20 +111,25 @@ a:hover, a:active {
     margin: auto;
 }
 
-
 /* multiple elements are targeted together as they all require a width of 80% and margin:auto */
 
 .discover-wrap h1, .construction h1, .discover-wrap p, .construction p, .entertainment h2, .discover h2, .entertainment p, .discover p, .who-what-where, .resto, .competitive-text, .newyear, .climbing-text, .thank-you h2, .contact-location, .home-section-one h1 {
     color: #3C3B3A;
 }
 
+/* multiple elements given a font-weight of bold are targeted altogether so they do not need to be set individually */
+
 .discover-wrap h1, .construction h1, .discover-wrap button, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form button, .contact-location h2, .home-section-one h1  {
     font-weight: bold;, 
 }
 
+/* multiple elements needing a width of 100% are set altogether */
+
 .discover-wrap button, .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .contact-form form button, .map iframe {
     width: 100%;
 }
+
+/* both h1s on the Home and About Page are targeted together as they share the same font sizes and margins */
 
 .discover-wrap h1, .construction h1 {
     font-size: 40px;
@@ -145,6 +150,8 @@ a:hover, a:active {
     grid-template-columns: repeat(2, auto);
     justify-content: space-around;
 }
+
+/* captions under activity icons set to center */
 
 .bowling-icon, .climbing-icon, .fitness-icon, .basketball-icon {
     text-align: center;
@@ -171,6 +178,9 @@ a:hover, a:active {
     border: hidden;
     border-radius: 50px;
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
+
+/* an animation is given to the Get Started button, to have it ease into full opacity once the page loads */ 
+
     opacity: 1;
     animation-name: opacity;
     animation-iteration-count: 1;
@@ -196,6 +206,8 @@ a:hover, a:active {
     margin-bottom: 20px;
 }
 
+/* scroll arrow is not to be visible in mobile, so it is given a display of none */
+
 .scroll {
     display: none;
 }
@@ -210,6 +222,9 @@ a:hover, a:active {
         display: flex;
         justify-content: flex-end;
         font-size: 27px;
+
+/* same opacity animation is given to both Learn More button on Home page */
+
         opacity: 1;
         animation-name: opacity;
         animation-iteration-count: 1;
@@ -225,6 +240,8 @@ a:hover, a:active {
 		opacity: 1;
 	}
 }
+
+/* styling for learn more buttons */ 
 
 .learn-more a {
     width: 50%;
@@ -280,6 +297,8 @@ a:hover, a:active {
     padding-bottom: 20px;
 }
 
+/* styling is set for h2's, h3's, and p's in both entertainment and discover sections, as they share attributes */
+
 .entertainment h2, .discover h2 {
     font-size: 32px;
     font-style: italic;
@@ -298,6 +317,8 @@ a:hover, a:active {
     line-height: 35px;
 }
 
+/* styling attributes set for footer */
+
 .footer {
     background-color: #3C3B3A;
     color: #F2F2F2;
@@ -311,20 +332,15 @@ a:hover, a:active {
     padding-top: 32px;
 }
 
+/* social media icons are set to display in grid columns */
+
 .icon-list ul {
     margin-top: 6px;
     display: grid;
-    grid-template-columns: 25px 25px 25px 30px;
     grid-column-gap: 12px;
-    justify-content: center;   
-}
-
-.footer figure img{
-    width: 22px;
-}
-
-.footer figure figcaption {
-    font-size: 9px;
+    grid-template-columns: 25px 25px 25px 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* CSS for About page */
@@ -335,6 +351,8 @@ a:hover, a:active {
     margin: auto;
     margin-bottom: 20px;
 }
+
+/* styling is set for green Services and About images that will span across width of screen, and for the text that appears in front of them  */
 
 .green {
     position: relative;
@@ -349,6 +367,8 @@ a:hover, a:active {
     transform: translate(-50%, -50%);
     font-size: 50px;
 }
+
+/* styling is set for section of text below the About green image */
 
 .who-what-where {
     margin-top: 25px;
@@ -371,19 +391,21 @@ a:hover, a:active {
     margin-bottom: 5px;    
 }
 
+/* activity images below Services section are not to be displayed in mobile browsers, so they are given a display of none */ 
+
 .bar-img, .competitive-img, .climbing-img, .fitness-img {
     display: none;
 }
 
-.resto, .newyear {
+.resto, .newyear, .competitive, .climbing {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
+/* a background color of F2F2F2 must be set for .competitive and .climbing sections */
+
 .competitive, .climbing {
     background-color: #F2F2F2;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2 {
@@ -401,6 +423,8 @@ a:hover, a:active {
     font-size: 15px;
     line-height: 35px;
 }
+
+/* styling for break section with option to Subscribe */
 
 .break {
     background-color: #3C3B3A;
@@ -425,6 +449,8 @@ a:hover, a:active {
     margin-bottom: 24px;
 }
 
+/* styling for Thank You section at bottom of About page */
+
 .thank-you {
     text-align: center;
 }
@@ -434,6 +460,8 @@ a:hover, a:active {
     line-height: 66px;
 }
 
+/* company icons are given display of grid to align them in one column on mobile */
+
 .thank-you-images {
     display: flex;
     flex-direction: column;
@@ -441,6 +469,8 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
 }
+
+/* nth-child is used for each individual company icon as they all have different px sizes */
 
 
 .thank-you-images img:nth-child(1) {
@@ -462,6 +492,8 @@ a:hover, a:active {
     width: 152px;
 }
 
+/* Styling for Contact page */
+
 .contact-we-want h1 {
     font-size: 50px;
     margin-top: 25px;
@@ -473,12 +505,16 @@ a:hover, a:active {
     margin-top: 20px;
 }
 
+/* styling for vector image on contact page */
+
 .contact-we-want img {
     display: block;
     width: 302px;
     margin: auto;
     margin-bottom: 1rem;
 }
+
+/* styling for contact form */
 
 .contact-form form {
     background-color: #26A682;
@@ -564,6 +600,8 @@ textarea[type=text] {
     margin-top: 40px;
 }
 
+/* styling for back to top button, also an animation is given to have it bounce upwards */
+
 .back-to-top {
     display: grid;
     grid-template-columns: repeat(12, auto);
@@ -572,134 +610,32 @@ textarea[type=text] {
     margin-bottom: 10px;
 }
 
+.back-to-top .arrow {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.back-to-top .arrow img {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+/* styling for map */
+
 .map iframe {
     height: 250px;
     width: 100%;
     border: 0;
 }
-
-.bounce-top {
-	-webkit-animation: bounce-top 1.9s both;
-	        animation: bounce-top 1.9s both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2020-3-13 13:36:29
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation bounce-top
- * ----------------------------------------
- */
- @-webkit-keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-  }
-  @keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-  }
-  
 
 /* CSS for Tablet breakpoint */
 
@@ -709,6 +645,9 @@ textarea[type=text] {
     .header {
         padding: 0;
     }
+
+    /* styling to have navigation elements display in grid, on opposite sides of header */ 
+
     .navigation nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -740,22 +679,31 @@ textarea[type=text] {
         margin-bottom: 20px;
     }
 
+    /* activity icons are still in a grid, but now displayed in 4 columns, side by side */
+
     .icons {
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-content: space-around;
     }
 
-    .scroll-arrow {
-        width: 4rem;
-        text-align: center;
-    }
+    /* styling for Get Started button is changed to width of 300px */
 
     .discover-wrap button {
         width: 300px;
         display: block;
         margin: 40px auto 40px auto;
     }
+
+    /* styling for scroll arrow, which now appears in tablet view */
+
+    .scroll-arrow {
+        width: 4rem;
+        text-align: center;
+    }
+
+    /* animation is also applied to scroll button, to draw attention by having it pulse in and out */
+
 
     .pulsate-bck {
         -webkit-animation: pulsate-bck 1.5s ease-in infinite both;
@@ -780,8 +728,8 @@ textarea[type=text] {
               transform: scale(1);
     }
     50% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
     }
     100% {
       -webkit-transform: scale(1);
@@ -794,14 +742,16 @@ textarea[type=text] {
               transform: scale(1);
     }
     50% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
     }
     100% {
       -webkit-transform: scale(1);
               transform: scale(1);
     }
   }
+
+  /* scroll button is displayed in grid and justified to center */
 
     .scroll {
         display: grid;
