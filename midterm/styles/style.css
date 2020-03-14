@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* Validator shows error with this area */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -102,21 +104,27 @@ a:hover, a:active {
 
 /* styling for first sections of both Home and About page, as they have the same attributes for h1 and p */
 
-.discover-wrap, .construction {
+.discover-wrap, .construction, .president-text, .entertainment, .discover, .who-what-where, .resto, .newyear, .resto, .competitive-text, .newyear, .climbing-text, .thank-you, .contact-we-want, .contact-form, .contact-location  {
     width: 80%;
     margin: auto;
 }
 
-.discover-wrap h1, .construction h1 {
+.discover-wrap h1, .construction h1, .discover-wrap p, .construction p, .entertainment h2, .discover h2, .entertainment p, .discover p, .who-what-where, .resto, .competitive-text, .newyear, .climbing-text, .thank-you h2, .contact-location, .home-section-one h1 {
     color: #3C3B3A;
+}
+
+.discover-wrap h1, .construction h1, .discover-wrap button, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form button, .contact-location h2, .home-section-one h1  {
+    font-weight: bold;, 
+}
+
+
+.discover-wrap h1, .construction h1 {
     font-size: 40px;
-    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
 .discover-wrap p, .construction p {
-    color: #3C3B3A;
     font-size: 20px;
     line-height: 35px;
     margin-bottom: 15px;
@@ -141,13 +149,11 @@ a:hover, a:active {
     color: #26A682;
 }
 
-
 /* styling for Get Started button */
 
-button {
+.discover-wrap button {
     background-color: #26A682;
     color: #F2F2F2;
-    font-weight: bold;
     font-size: 32px;
     text-align: center;
     margin-top: 30px;
@@ -157,16 +163,7 @@ button {
     border: hidden;
     border-radius: 50px;
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);
-
-}
-
-.discover-wrap button {
     width: 100%;
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding-top: 7px;
-    padding-bottom: 6px;
 }
 
 /* setting initial sizing for discover vector image */
@@ -192,14 +189,13 @@ button {
 .learn-more {
     display: flex;
     justify-content: flex-end;
+    font-size: 27px;
 }
 
-.learn-more .button-animation {
-    font: 27px;
+.learn-more a {
     width: 50%;
     background-color: #26A682;
     color: #F2F2F2;
-    font-weight: bold;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -245,27 +241,21 @@ button {
 
 .president-text {
     font-size: 16px;
-    width: 80%;
-    margin: auto;
     line-height: 35px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .home-image-two img {
     width: 100%;
 }
 
-.entertainment, .discover {
-    width: 80%;
-    margin: auto;
-} 
 
 .entertainment-img img {
     width: 100%;
 }
 
 .entertainment h2, .discover h2 {
-    color: #3C3B3A;
     font-size: 32px;
     font-style: italic;
     margin-top: 30px;
@@ -279,7 +269,6 @@ button {
 }
 
 .entertainment p, .discover p  {
-    color: #3C3B3A;
     font-size: 16px;
     line-height: 35px;
 }
@@ -326,7 +315,6 @@ button {
     position: relative;
     text-align: center;
     color: #F2F2F2;
-    font-weight: bold;
 }
 
 .green-img img {
@@ -342,9 +330,6 @@ button {
 }
 
 .who-what-where {
-    width: 80%;
-    margin: auto;
-    color: #3C3B3A;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -371,9 +356,6 @@ button {
 }
 
 .resto, .newyear {
-    width: 80%;
-    margin: auto;
-    color: #3C3B3A;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -384,15 +366,8 @@ button {
     padding-bottom: 25px;
 }
 
-.competitive-text, .newyear, .climbing-text {
-    width: 80%;
-    margin: auto;
-    color: #3C3B3A;
-}
-
 .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2 {
     font-size: 32px;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -422,20 +397,15 @@ button {
 .break button {
     font-size: 20px;
     padding: 6px 22px 6px 22px;
-    width: 140px;
 }
 
 .thank-you {
-    width: 80%;
-    margin: auto;
     text-align: center;
 }
 
 .thank-you h2 {
     font-size: 56px;
     line-height: 66px;
-    font-weight: bold;
-    color: #3C3B3A;
 }
 
 .thank-you-images {
@@ -466,14 +436,8 @@ button {
     width: 152px;
 }
 
-.contact-we-want {
-    width: 80%;
-    margin: auto;
-}
-
 .contact-we-want h1 {
     font-size: 50px;
-    font-weight: bold;
     margin-top: 25px;
 }
 
@@ -487,6 +451,7 @@ button {
     display: block;
     width: 302px;
     margin: auto;
+    margin-bottom: 1rem;
 }
 
 .contact-form form {
@@ -498,15 +463,9 @@ button {
     margin-bottom: 40px;  
 }
 
-.contact-form {
-    width: 80%;
-    margin: auto;
-}
-
 .contact-form h2 {
     color: #F2F2F2;
     font-size: 40px;
-    font-weight: bold;
     line-height: 49px;
     padding-bottom: 10px;
 }
@@ -549,7 +508,7 @@ textarea[type=text] {
 .contact-form form button {
     width: 100%;
     background-color: #3C3B3A;
-    font-weight: bold;
+    color: #F2F2F2;
     font-size: 32px;
     text-align: center;
     margin-top: 20px;
@@ -560,15 +519,8 @@ textarea[type=text] {
     border-radius: 30px;
 }
 
-.contact-location {
-    color: #3C3B3A;
-    width: 80%;
-    margin: auto;
-}
-
 .contact-location h2 {
     font-size: 40px;
-    font-weight: bold;
 }
 
 .contact-location h3 {
@@ -593,10 +545,6 @@ textarea[type=text] {
     justify-content: space-around;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.arrow {
-    text-align: center;
 }
 
 .map iframe {
@@ -755,9 +703,7 @@ textarea[type=text] {
     }
 
     .home-section-one h1 {
-        color: #3C3B3A;
         font-size: 72px;
-        font-weight: bold;
         margin-top: 80px;
         margin-bottom: 20px;
         line-height: 85px;
@@ -769,14 +715,15 @@ textarea[type=text] {
         margin-bottom: 20px;
     }
 
-    .button-animation {
-        width: 220px;
-    }
-
     .icons {
         display: grid;
         grid-template-columns: repeat(4, auto);
         justify-content: space-around;
+    }
+
+    .scroll-arrow {
+        width: 4rem;
+        text-align: center;
     }
 
     .discover-wrap button {
@@ -785,18 +732,79 @@ textarea[type=text] {
         margin: 40px auto 40px auto;
     }
 
+    .pulsate-bck {
+        -webkit-animation: pulsate-bck 1.5s ease-in infinite both;
+                animation: pulsate-bck 1.5s ease-in infinite both;
+    }
+
+    /* ----------------------------------------------
+ * Generated by Animista on 2020-3-13 19:2:47
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
     .scroll {
-        display: block;
-        margin: auto;
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
-    .scroll .scroll-arrow img {
-        transform: rotate(180deg);
+    .discover, .entertainment {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
-    .discover {
+    .discover, .entertainment {
         margin-top: 42px;
         margin-bottom: 41px;
+    }
+
+    .learn-more {
+        justify-self: end;
+    }
+
+    .learn-more a {
+        width: 100%;
+        padding: 10px 40px 10px 40px;
     }
 
     .entertainment h2, .discover h2 {
@@ -814,7 +822,7 @@ textarea[type=text] {
         line-height: 35px;
     }
 
-    .learn-more .button-animation {
+    .learn-more {
         font: 27px;
         max-width: 230px;  
     }
@@ -867,6 +875,31 @@ textarea[type=text] {
     .bar, .fitness {
         margin: 3rem 0 3rem 3rem;
     }
+
+    .break {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;   
+    }
+
+    .break p {
+        font-size: 24px;
+        padding: 0;
+        justify-self: end;
+        
+    }
+
+    .break a {
+        justify-self: start;
+        margin-left: 2rem;
+    }
+
+    .break button {
+        font-size: 24px;
+    }
+
+    
 
     .contact-we-want img {
         width: 452px;
@@ -927,11 +960,29 @@ textarea[type=text] {
             font-size: 18px;
         }
 
-        .bar {
+        .bar, .fitness, .competitive, .climbing {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr;
+        }
+
+        .bar, .fitness {
             margin-left: 4rem;
+        }
+    
+        .break p {
+            font-size: 24px;
+            padding: 0;
+            justify-self: end;   
+        }
+    
+        .break a {
+            justify-self: start;
+            margin-left: 2rem;
+        }
+    
+        .break button {
+            font-size: 24px;
         }
 
         .thank-you {

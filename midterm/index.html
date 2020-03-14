@@ -10,7 +10,7 @@
 <body>
     <!-- class of wrapper used to allow a max-width for all content -->
 
-    <div class="wrapper">
+    <div id="top" class="wrapper">
 
         <!-- header is used to contain all elements in header navigation area -->
 
@@ -23,7 +23,7 @@
                     <nav>
                         <img src="images/logo.svg" alt="ARC logo">
                         <ul>
-                            <li><a class="nav-link active" href="index.html">Home</a></li>
+                            <li><a class="active" href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="discover-wrap-two">
-                        <button class="button" type="button">Get Started</button>
+                        <a href="about.html"><button type="button">Get Started</button></a>
                     </div>
                 </div>
 
@@ -86,17 +86,21 @@
        
              <!-- scroll arrow in first section -->
 
-        <div class="scroll">
-            <div class="scroll-arrow">
-                <img src="images/icons/arrow.svg" alt="back to top arrow">
-                <p>scroll</p>
+        <div class="pulsate-bck">
+
+            <div class="scroll">
+                <div class="scroll-arrow">
+                    <img src="images/icons/arrow.svg" alt="scroll arrow">
+                    <p>scroll</p>
+                </div>
             </div>
+
         </div>
 
         <!-- first responsive image, photo of students graduation -->
         <!-- responsive sizes must be sourced to allow for multiple browser sizes -->
 
-        </div>
+ </div>
             <div class="graduation">
                     <picture>
                             <source media="(max-width: 749px)"
@@ -112,17 +116,13 @@
                     </picture>
             </div>
 
-
-
             <div class="discover">
                 <h2>Discover.</h2>
                 <h3>Algonquin College</h3>
                 <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
 
                 <div class="learn-more">
-                    <div class="button-animation">
-                        <a href="https://www.google.com/">Learn More</a>
-                    </div>
+                        <a href="https://www.google.com/" target="_blank">Learn More</a>     
                 </div>
 
             </div>
@@ -154,11 +154,11 @@
                 <h2>Discover.</h2>
                 <h3>The entertainment</h3>
                 <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+
                 <div class="learn-more">
-                        <div class="button-animation">
-                            <a href="https://www.google.com/">Learn More</a>
-                        </div>
+                        <a href="https://www.google.com/" target="_blank">Learn More</a>     
                 </div>
+
             </div>
 
 
@@ -167,7 +167,8 @@
             
     <div class="back-to-top">
             <div class="arrow">
-                <img src="images/icons/arrow.svg" alt="back to top arrow">
+                    <a href="#top">
+                <img src="images/icons/top-arrow.svg" alt="back to top arrow"></a>
                 <p>back to top</p>
             </div>
         </div>
@@ -179,10 +180,10 @@
                 <p>Follow us</p>
                 <div class="icon-list">
                         <ul>
-                            <li><a href="https://www.google.com/"><img src="images/icons/facebook.svg" alt="facebook icon"></a></li>
-                            <li><img src="images/icons/instagram.svg" alt="instagram icon"></li>
-                            <li><img src="images/icons/twitter.svg" alt="twitter icon"></li>
-                            <li><img src="images/icons/youtube.svg" alt="linkedin icon"></li>
+                            <li><a href="https://www.google.com/" target="_blank"><img src="images/icons/facebook.svg" alt="facebook icon"></a></li>
+                            <li><a href="https://www.google.com/" target="_blank"><img src="images/icons/instagram.svg" alt="instagram icon"></a></li>
+                            <li><a href="https://www.google.com/" target="_blank"><img src="images/icons/twitter.svg" alt="twitter icon"></a></li>
+                            <li><a href="https://www.google.com/" target="_blank"><img src="images/icons/youtube.svg" alt="linkedin icon"></a></li>
                         </ul>
                     </div>
             </footer>
