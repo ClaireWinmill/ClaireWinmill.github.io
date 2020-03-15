@@ -458,6 +458,7 @@ a:hover, a:active {
 .thank-you h2 {
     font-size: 56px;
     line-height: 66px;
+    padding-top: 2rem;
 }
 
 /* company icons are given display of grid to align them in one column on mobile */
