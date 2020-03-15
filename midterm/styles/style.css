@@ -600,7 +600,7 @@ textarea[type=text] {
     margin-top: 40px;
 }
 
-/* styling for back to top button, also an animation is given to have it bounce upwards */
+/* styling for back to top button, also an animation is given to have it bounce upwards - scale also had to be adjusted for animation to ensure it did not bounce too high and cover other content */
 
 .back-to-top {
     display: grid;
@@ -624,7 +624,7 @@ textarea[type=text] {
 @keyframes bounce {
     0%   { transform: scale(1,1)    translateY(0); }
     10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    30%  { transform: scale(.9,.9) translateY(-100px); }
     50%  { transform: scale(1,1)    translateY(0); }
     100% { transform: scale(1,1)    translateY(0); }
 }
@@ -830,8 +830,7 @@ textarea[type=text] {
     }
 
     .competitive, .climbing {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding: 3rem 3rem 3rem 1rem;
     }
 
     .competitive-img, .climbing-img {
