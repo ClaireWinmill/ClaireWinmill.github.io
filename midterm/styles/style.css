@@ -119,13 +119,13 @@ a:hover, a:active {
 
 /* multiple elements given a font-weight of bold are targeted altogether so they do not need to be set individually */
 
-.discover-wrap h1, .construction h1, .discover-wrap button, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form button, .contact-location h2, .home-section-one h1  {
+.discover-wrap h1, .construction h1, .discover-wrap-two, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form button, .contact-location h2, .home-section-one h1  {
     font-weight: bold;, 
 }
 
 /* multiple elements needing a width of 100% are set altogether */
 
-.discover-wrap button, .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .contact-form form button, .map iframe {
+ .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .contact-form form button, .map iframe {
     width: 100%;
 }
 
@@ -166,7 +166,7 @@ a:hover, a:active {
 
 /* styling for Get Started button */
 
-.discover-wrap button {
+.discover-wrap-two {
     background-color: #26A682;
     color: #F2F2F2;
     font-size: 32px;
@@ -429,6 +429,7 @@ a:hover, a:active {
 .break {
     background-color: #3C3B3A;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .break p {
@@ -438,7 +439,7 @@ a:hover, a:active {
     padding-bottom: 17px;
 }
 
-.break button {
+.break a {
     background-color: #26A682;
     color: #F2F2F2;
     text-align: center;
@@ -446,7 +447,7 @@ a:hover, a:active {
     border-radius: 50px;
     font-size: 20px;
     padding: 6px 22px 6px 22px;
-    margin-bottom: 24px;
+
 }
 
 /* styling for Thank You section at bottom of About page */
@@ -598,7 +599,8 @@ textarea[type=text] {
 }
 
 .map {
-    margin-top: 40px;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
 /* styling for back to top button, also an animation is given to have it bounce upwards - scale also had to be adjusted for animation to ensure it did not bounce too high and cover other content */
@@ -690,7 +692,7 @@ textarea[type=text] {
 
     /* styling for Get Started button is changed to width of 300px */
 
-    .discover-wrap button {
+    .discover-wrap-two {
         width: 300px;
         display: block;
         margin: 40px auto 40px auto;
@@ -761,6 +763,8 @@ textarea[type=text] {
         margin-bottom: 20px;
     }
 
+    /* content in discover and entertainment sections are displayed using grid to have their content display side by side */
+
     .discover, .entertainment {
         display: grid;
         grid-template-columns: 1fr;
@@ -775,6 +779,8 @@ textarea[type=text] {
     .learn-more {
         justify-self: end;
     }
+
+    /* Learn More buttons are displayed using justify-self: end, to push the learn more buttons to the very right side of the text containers */
 
     .learn-more a {
         width: 100%;
@@ -801,6 +807,8 @@ textarea[type=text] {
         max-width: 230px;  
     }
 
+    /* section with SA president information is displayed using grid to display contenr side by side in tablet view */
+
     .president {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -809,13 +817,19 @@ textarea[type=text] {
         padding-bottom: 40px;
     }
 
+    .president-img {
+        align-self: center;
+    }
+
     .president-img img {
-        margin-top: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .president-text {
         font-size: 24px;
         grid-column: 2 / 3;    
+        align-self: center;
     }
 
     .construction img {
@@ -839,9 +853,15 @@ textarea[type=text] {
         grid-row: 1;
     }
 
-    .bar, .competitive, .climbing, .fitness {
+    .bar, .fitness {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr;
+    }
+
+    .competitive, .climbing {
+        display: grid;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
     }
 
@@ -859,18 +879,16 @@ textarea[type=text] {
     }
 
     .break p {
-        font-size: 24px;
+        font-size: 20px;
         padding: 0;
-        justify-self: end;    
+        justify-self: center;    
     }
 
     .break a {
         justify-self: start;
-    }
-
-    .break button {
         font-size: 24px;
     }
+
 
     .contact-we-want img {
         width: 452px;
@@ -886,19 +904,33 @@ textarea[type=text] {
 
     @media (min-width: 960px) {
 
-        .icons p {
-            line-height: 20px;
-        }
-
         .discover-wrap {
             margin-top: 95px;
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: repeat(1 1fr);
+            grid-column-gap: 1rem;
+        }
+
+        .sm-discover-wrap {
+            grid-row: 1 / 2;
+            align-self: center;
+         }
+
+        .icons {
+            grid-column-gap: 0.5rem;
+        }
+
+        .icons p {
+            line-height: 20px;
+        }
+
+        .discover-img {
+            align-self: center;
         }
 
         .discover-img img {
-            width: 50vw;
+            width: 40vw;
         }
 
         .disc-wrap-1 {
@@ -916,10 +948,6 @@ textarea[type=text] {
         .discover {
             justify-self: center;
             align-items: center;
-        }
-
-        .president-text {
-            padding-bottom: 50px;
         }
 
         .disc-wrap-2 {
@@ -970,15 +998,13 @@ textarea[type=text] {
         .break p {
             font-size: 24px;
             padding: 0;
-            justify-self: center;;   
+            justify-self: center;
+            margin-right: 2rem;   
         }
-    
+
         .break a {
             justify-self: start;
-        }
-    
-        .break button {
-            font-size: 24px;
+            margin-left: 2rem;
         }
 
         .thank-you {
@@ -1000,12 +1026,15 @@ textarea[type=text] {
             justify-content: space-between;
             align-items: center;
             padding-left: 105px;
-            padding-right: 105px;
-            
+            padding-right: 105px;    
+        }
+
+        .thank-you-images img:nth-child(3), .thank-you-images img:nth-child(4) {
+            margin-bottom: 2rem;
         }
 
         .map {
-            margin-top: 0;
+            margin: 0 3rem 0 0;
         }
 
         .map iframe {
