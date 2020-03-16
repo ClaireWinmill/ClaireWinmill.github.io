@@ -964,6 +964,28 @@ textarea[type=text] {
             margin-right: 2rem;
         }
 
+        .construction {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-content: center;
+        }
+
+        .construction-text {
+            align-self: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .construction-img {
+            align-self: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .construction-img img {
+            width: 40vw;
+        }
+
         .who-what-where {
             display: grid;
             grid-template-columns: repeat(6, auto);
