@@ -106,7 +106,7 @@ a:hover, a:active {
 
 /* multiple elements are targeted together as they all require a width of 80% and margin:auto */
 
-.discover-wrap, .construction, .president-text, .entertainment, .discover, .who-what-where, .resto, .newyear, .resto, .competitive-text, .newyear, .climbing-text, .thank-you, .contact-we-want, .contact-form, .contact-location  {
+.discover-wrap, .construction, .president-text, .entertainment, .discover, .who-what-where, .resto, .newyear, .resto, .competitive-text, .newyear, .climbing-text, .thank-you, .contact-we-want, .contact-form, .contact-location {
     width: 80%;
     margin: auto;
 }
@@ -119,13 +119,13 @@ a:hover, a:active {
 
 /* multiple elements given a font-weight of bold are targeted altogether so they do not need to be set individually */
 
-.discover-wrap h1, .construction h1, .discover-wrap-two, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form button, .contact-location h2, .home-section-one h1  {
+.discover-wrap h1, .construction h1, .discover-wrap-two, .learn-more a, .green, .resto h2, .competitive-text h2, .newyear h2, .climbing-text h2, .thank-you h2, .contact-we-want h1, .contact-form h2, .contact-form form .submit, .contact-location h2, .home-section-one h1  {
     font-weight: bold;, 
 }
 
 /* multiple elements needing a width of 100% are set altogether */
 
- .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .contact-form form button, .map iframe {
+ .graduation img, .home-image-two img, .entertainment-img img, .green-img img, .services .centered img, .map iframe {
     width: 100%;
 }
 
@@ -524,7 +524,7 @@ a:hover, a:active {
     border-radius: 20px;
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.1);
     padding: 10px 20px 10px 20px;
-    margin-bottom: 40px;  
+    margin-bottom: 40px; 
 }
 
 .contact-form h2 {
@@ -569,7 +569,7 @@ textarea[type=text] {
     resize: none;
 }
 
-.contact-form form button {
+.contact-form form .submit {
     background-color: #3C3B3A;
     color: #F2F2F2;
     font-size: 32px;
@@ -855,13 +855,13 @@ textarea[type=text] {
 
     .bar, .fitness {
         display: grid;
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
     }
 
     .competitive, .climbing {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 1fr;
     }
 
@@ -985,10 +985,15 @@ textarea[type=text] {
             font-size: 18px;
         }
 
-        .bar, .fitness, .competitive, .climbing {
+        .bar, .fitness {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            grid-template-rows: 1fr;
+        }
+
+        .competitive, .climbing {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr;
         }
 
         .bar, .fitness {
@@ -998,6 +1003,7 @@ textarea[type=text] {
 
         .competitive, .climbing {
             align-items: center;
+            padding-right: 4rem;
         }
     
         .break p {
