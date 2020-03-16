@@ -653,7 +653,7 @@ textarea[type=text] {
 
     .navigation nav {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
@@ -661,6 +661,7 @@ textarea[type=text] {
 
     .navigation ul {
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
     }
 
@@ -990,8 +991,8 @@ textarea[type=text] {
             display: grid;
             grid-template-columns: repeat(6, auto);
             grid-template-rows: repeat(1, auto);
-            padding-top: 225px;
-            padding-bottom: 225px;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
         }
 
         .who, .what, .where {
