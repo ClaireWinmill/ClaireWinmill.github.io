@@ -993,6 +993,11 @@ textarea[type=text] {
 
         .bar, .fitness {
             margin-left: 4rem;
+            align-items: center;
+        }
+
+        .competitive, .climbing {
+            align-items: center;
         }
     
         .break p {
