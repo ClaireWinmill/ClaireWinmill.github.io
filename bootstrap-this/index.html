@@ -10,8 +10,205 @@
 
     <title>Bootstrap This!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="mx-3">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top shadow">
+        <!-- a branding style can be achieved by adding .navbar-brand -->
+        <a href="#" class="navbar-brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" width="50px" alt="Bootstrap Logo">
+        </a>
+    
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav" id="navbarNavDropdown">
+            <!-- adding icon for toggler button -->
+            <span class="navbar-toggler-icon"></span>
+        </button>     
+    
+        <div id="myNav" class="collapse navbar-collapse">
+          <div class="navbar-nav ml-auto">
+              <a href="#" class="nav-link active">Content</a>
+              <a href="#" class="nav-link">Components</a>
+              <a href="#" class="nav-link">Utilities</a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid mt-4">
+      <div class="container pt-4">
+        <h1 class="display-3 pt-4">Tighten up your Bootstraps!</h1>
+        <p class="pt-3 pb-3 h5">On this page you will be introduced to Bootstrap, the world’s most popular framework for building responsive, mobile-first sites</p>
+        <p class="pt-3 font-italic">With this system, you can prototype your ideas or build your entire app with Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+
+    <h3>Bootstrap can be used to style</h3>
+    <ul>
+      <li>Content</li>
+      <li>Utilities</li>
+      <li>Components</li>
+    </ul>
+
+    <br>
+
+    <h3 class="mt-4 text-danger"><u>Content</u></h3>
+    <br>
+    <h5 class="text-primary">Typography</h5>
+    <p><strong>The size and style of typography can be changed without having to use any CSS</strong></p>
+    <p class="text-success"><em>Regular HTML elements like h1, h2 etc. can be used</em></p>
+      <h1>h1 heading</h1>
+      <h2>h2 heading</h2>
+      <h3>h3 heading</h3>
+      <h4>h4 heading</h4>
+      <h5>h5 heading</h5>
+      <h6>h6 heading</h6>
+
+    <br>
+
+    <p class="text-success"><em>Classes of h1, h2 etc. can be added to regular p tags</em></p>
+    <p class="h1">p h1 heading</p>
+    <p class="h2">p h2 heading</p>
+    <p class="h3">p h3 heading</p>
+    <p class="h4">p h4 heading</p>
+    <p class="h5">p h5 heading</p>
+    <p class="h6">p h6 heading</p>
+
+    <br>
+
+
+    <p class="text-success"><em>Display classes can be used to make a heading stand out, using slightly different styling</em></p>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+    <br>
+
+    <p class="text-success"><em>Styling elements can be added to text</em></p>
+    <br>
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>del tag for strikethrough or deleted text.</del></p>
+    <p><u>u tag for underlined text</u></p>
+    <p><small>small tag for small or fine print.</small></p>
+    <p><strong>strong tag for bold text.</strong></p>
+    <p><em>em tag for italicized text.</em></p>
+
+    <br>
+
+
+    <h5 class="text-primary">Grids</h5>
+   
+    <br>
+
+    <p><strong>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive, thanks to a twelve column system, and five default tiers.</strong></p>
+    <p><strong>Resize your browser and see what happens!</strong></p>
+    <div class="row mb-3">
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+    </div>
+
+    <br>
+
+    <div class="row mb-3">
+        <div class="col-sm bg-info p-3 text-white border border-dark">1 of 2</div>
+        <div class="col-sm bg-info p-3 text-white border border-dark">2 of 2</div>
+    </div>    
+
+    <div class="row mb-3">
+        <div class="col-sm bg-info p-3 text-white border border-dark">1 of 4</div>
+        <div class="col-sm bg-info p-3 text-white border border-dark">2 of 4</div>
+        <div class="col-sm bg-info p-3 text-white border border-dark">3 of 4</div>
+        <div class="col-sm bg-info p-3 text-white border border-dark">4 of 4</div>
+    </div> 
+
+    <br>
+
+    <h5 class="text-primary mb-4">Images</h5>
+    <p><strong>Responsive Images can be set and styled using either the img tag or the picture tag</strong></p>
+    
+        <img src="https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg" class="img-thumbnail rounded-circle mx-auto d-block">
+
+        <img src="https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg" class="img-thumbnail rounded-pill mx-auto d-block">
+
+        <picture>
+            <source srcset="https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg 100w, https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg 200w, 
+            https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg 500w,
+            https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg 1000w">
+    
+            <img src="https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg" alt="placeholder" class="img-fluid mx-auto mb-4">
+        </picture>
+
+        <br>
+
+        <h3 class="mt-4 text-danger"><u>Utilities</u></h3>
+        <br>
+          <h5 class="text-primary">Colors</h5>
+            <p><strong>Colors can add meaning to text and elements, and can be added using a set of color utility classes. These classes are not named after the colors themselves (red, blue etc.)</strong></p>
+              <p class="text-success"><em>These classes can change the color of the text itself</em></p>
+              <p class="text-primary">text-primary</p>
+              <p class="text-secondary">text-secondary</p>
+              <p class="text-success">text-success</p>
+              <p class="text-danger">text-danger</p>
+              <p class="text-warning">text-warning</p>
+              <p class="text-info">text-info</p>
+              <p class="text-dark">text-dark</p>
+              <p class="text-body">text-body</p>
+              <p class="text-muted">text-muted</p>
+              <p class="text-black-50">text-black-50</p>
+    
+      <br>
+
+          <p class="text-success"><em>Similar to the contextual text color classes, easily set the background of an element to any contextual class.</em></p>
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+            
+      <br>
+
+      <h3 class="mt-4 text-danger"><u>Components</u></h3>
+        <br>
+          <h5 class="text-primary">Alerts</h5>
+          <p><strong>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts can also be dismissed, but require a specific jQuery plugin to do so</strong></p>
+          <p class="text-success"><em>Similar to the Bootstrap color classes, the same properties can be applied to Alerts</em></p>
+
+          <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert—check it out!
+            </div>
+
+
+        
+       
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -20,4 +217,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
-That’s all you need for overall page re
