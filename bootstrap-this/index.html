@@ -10,7 +10,7 @@
 
     <title>Bootstrap This!</title>
   </head>
-  <body class="mx-3">
+  <body class="mx-3 bg-light">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top shadow">
         <!-- a branding style can be achieved by adding .navbar-brand -->
         <a href="#" class="navbar-brand">
@@ -31,9 +31,9 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid mt-4">
+    <div class="jumbotron jumbotron-fluid mt-4 rounded">
       <div class="container pt-4">
-        <h1 class="display-3 pt-4">Tighten up your Bootstraps!</h1>
+        <h1 class="display-4 pt-4">Tighten up your Bootstraps!</h1>
         <p class="pt-3 pb-3 h5">On this page you will be introduced to Bootstrap, the world’s most popular framework for building responsive, mobile-first sites</p>
         <p class="pt-3 font-italic">With this system, you can prototype your ideas or build your entire app with Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
       </div>
@@ -50,45 +50,54 @@
 
     <h3 class="mt-4 text-danger"><u>Content</u></h3>
     <br>
+
     <h5 class="text-primary">Typography</h5>
-    <p><strong>The size and style of typography can be changed without having to use any CSS</strong></p>
-    <p class="text-success"><em>Regular HTML elements like h1, h2 etc. can be used</em></p>
+    <br>
+    <p>The size and style of typography can be changed without having to use any CSS</p>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col m-4 p-4 bg-secondary rounded">
+    
+    <p class="text-light"><small><em>Regular HTML elements like h1, h2 etc. can be used</em></small></p>
       <h1>h1 heading</h1>
       <h2>h2 heading</h2>
       <h3>h3 heading</h3>
       <h4>h4 heading</h4>
       <h5>h5 heading</h5>
       <h6>h6 heading</h6>
+    </div>
 
     <br>
 
-    <p class="text-success"><em>Classes of h1, h2 etc. can be added to regular p tags</em></p>
-    <p class="h1">p h1 heading</p>
-    <p class="h2">p h2 heading</p>
-    <p class="h3">p h3 heading</p>
-    <p class="h4">p h4 heading</p>
-    <p class="h5">p h5 heading</p>
-    <p class="h6">p h6 heading</p>
+    <div class="col m-4 p-4 bg-secondary rounded">
+      <p class="text-light"><small><em>Classes of h1, h2 etc. can be added to regular p tags</em></small></p>
+        <p class="h1">p h1 heading</p>
+        <p class="h2">p h2 heading</p>
+        <p class="h3">p h3 heading</p>
+        <p class="h4">p h4 heading</p>
+        <p class="h5">p h5 heading</p>
+        <p class="h6">p h6 heading</p>
+    </div>
 
     <br>
 
 
-    <p class="text-success"><em>Display classes can be used to make a heading stand out, using slightly different styling</em></p>
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-2">Display 2</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-4">Display 4</h1>
-
     <br>
 
-    <p class="text-success"><em>Styling elements can be added to text</em></p>
-    <br>
-    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-    <p><del>del tag for strikethrough or deleted text.</del></p>
-    <p><u>u tag for underlined text</u></p>
-    <p><small>small tag for small or fine print.</small></p>
-    <p><strong>strong tag for bold text.</strong></p>
-    <p><em>em tag for italicized text.</em></p>
+      <div class="col m-4 p-4 bg-secondary rounded">
+        <p class="text-light"><small><em>Styling elements can be added to text</em></small></p>
+        <br>
+          <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+          <p><del>del tag for strikethrough or deleted text.</del></p>
+          <p><u>u tag for underlined text</u></p>
+          <p><small>small tag for small or fine print.</small></p>
+          <p><strong>strong tag for bold text.</strong></p>
+          <p><em>em tag for italicized text.</em></p>
+      </div>
+
+    </div>
+    </div>
 
     <br>
 
@@ -97,27 +106,28 @@
    
     <br>
 
-    <p><strong>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive, thanks to a twelve column system, and five default tiers.</strong></p>
-    <p><strong>Resize your browser and see what happens!</strong></p>
-    <div class="row mb-3">
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
-        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid Column</div>
+    <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive, thanks to a twelve column system, and five default tiers.</p>
+    <p><strong><em>Below is an example of grid columns that will change with browser width. In smaller browsers, each column will span the full width of 12, then change to 6, and end with span of 3 </strong></p>
+    <p><strong>Resize your browser and see what happens!</em></strong></p>
+    <div class="row m-3">
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
+        <div class="col-md-6 col-lg-3 bg-dark p-3 text-white border border-secondary">Grid column will change from 1 column, to 2, and end with 4 columns as you change your browser</div>
     </div>
 
     <br>
 
-    <div class="row mb-3">
+    <div class="row m-3">
         <div class="col-sm bg-info p-3 text-white border border-dark">1 of 2</div>
         <div class="col-sm bg-info p-3 text-white border border-dark">2 of 2</div>
     </div>    
 
-    <div class="row mb-3">
+    <div class="row m-3">
         <div class="col-sm bg-info p-3 text-white border border-dark">1 of 4</div>
         <div class="col-sm bg-info p-3 text-white border border-dark">2 of 4</div>
         <div class="col-sm bg-info p-3 text-white border border-dark">3 of 4</div>
@@ -127,7 +137,7 @@
     <br>
 
     <h5 class="text-primary mb-4">Images</h5>
-    <p><strong>Responsive Images can be set and styled using either the img tag or the picture tag</strong></p>
+    <p>Responsive Images can be set and styled using either the img tag or the picture tag</p>
     
         <img src="https://viralcats.net/blog/wp-content/uploads/2017/12/5-582e08ceae3f5_Featured-Image_Viral-Cats.jpg" class="img-thumbnail rounded-circle mx-auto d-block">
 
@@ -142,29 +152,41 @@
         </picture>
 
         <br>
+        <br>
 
         <h3 class="mt-4 text-danger"><u>Utilities</u></h3>
         <br>
           <h5 class="text-primary">Colors</h5>
-            <p><strong>Colors can add meaning to text and elements, and can be added using a set of color utility classes. These classes are not named after the colors themselves (red, blue etc.)</strong></p>
-              <p class="text-success"><em>These classes can change the color of the text itself</em></p>
-              <p class="text-primary">text-primary</p>
-              <p class="text-secondary">text-secondary</p>
-              <p class="text-success">text-success</p>
-              <p class="text-danger">text-danger</p>
-              <p class="text-warning">text-warning</p>
+            <p>Colors can add meaning to text and elements, and can be added using a set of color utility classes. These classes are not named after the colors themselves (red, blue etc.)</p>
 
-              <a class="btn btn-primary mb-4" href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_blank" role="button">Read More</a>
+
+  <div class="container">
+    <div class="row">
+      <div class="col m-4 p-4 bg-secondary rounded">
+            <p class="text-light"><small><em>These classes can change the color of the text itself</em></small></p>  
+            <p class="text-dark">text-dark</p>
+            <p class="text-white">text-white</p>
+            <p class="text-success">text-success</p>
+            <p class="text-danger">text-danger</p>
+            <p class="text-warning">text-warning</p>
+
+            <a class="btn btn-primary mb-4" href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_blank" role="button">Read More</a>
+      </div>
     
       <br>
 
-          <p class="text-success"><em>Similar to the contextual text color classes, easily set the background of an element to any contextual class.</em></p>
-            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+      <div class="col m-4 p-4 bg-secondary rounded">
+          <p class="text-light"><small><em>Similar to the contextual text color classes, easily set the background of an element to any contextual class.</em></small></p>
+            <div class="p-2 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-2 mb-2 bg-warning text-white">.bg-warning</div>
+            <div class="p-2 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-2 mb-4 bg-danger text-white">.bg-danger</div>
 
             <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_blank" role="button">Read More</a>
+     </div>
+
+    </div>
+  </div>
             
       <br>
       <br>
@@ -172,8 +194,13 @@
       <h3 class="mt-4 text-danger"><u>Components</u></h3>
         <br>
           <h5 class="text-primary">Alerts</h5>
-          <p><strong>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts can also be dismissed, but require a specific jQuery plugin to do so</strong></p>
-          <p class="text-success"><em>Similar to the Bootstrap color classes, the same properties can be applied to Alerts</em></p>
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts can also be dismissed, but require a specific jQuery plugin to do so</p>
+
+    <div class="container">
+      <div class="row">
+
+          <div class="col m-4 p-4 bg-secondary rounded">
+          <p class="text-light"><small><em>Similar to the Bootstrap color classes, the same properties can be applied to Alerts</em></small></p>
 
           <div class="alert alert-primary" role="alert">
               A simple primary alert—check it out!
@@ -187,12 +214,79 @@
             <div class="alert alert-danger" role="alert">
               A simple danger alert—check it out!</div>
             
-              <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_blank" role="button">Read More</a>
+            <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_blank" role="button">Read More</a>
+          </div>
 
-              <nav class="navbar fixed-bottom navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Still want to learn more?</a>
-                <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.4/getting-started/introduction//" target="_blank" role="button">Visit the Bootstrap Site</a>
-              </nav>
+          <div class="col m-4 p-4 bg-secondary rounded">
+              <p class="text-light"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>  
+           
+
+          <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>You successfully read this important alert message. </p>
+                <hr>
+                <p class="mb-2">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                <hr>
+                <h5 class="alert-heading mx-4">Check it Out</h5>
+                <p class="mx-4">You can change to margins within the same alert</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <h5 class="text-primary">Buttons</h5>
+          <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+
+  <div class="container">
+    <div class="row">
+
+<div class="col m-4 p-4 bg-secondary rounded">
+       <p class="text-light"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>            
+          <a class="btn btn-primary mb-2" href="#" role="button">Link</a>
+          <button class="btn btn-primary mb-2" type="submit">Button</button>
+          <input class="btn btn-primary mb-2" type="button" value="Submit">
+
+       <p class="text-light mt-5"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>  
+          <button type="button" class="btn btn-primary mb-2">Primary</button>
+          <button type="button" class="btn btn-light mb-2">Light</button>
+          <button type="button" class="btn btn-success mb-2">Success</button> 
+          <button type="button" class="btn btn-danger mb-2">Danger</button>
+
+       <p class="text-light mt-5"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>  
+          <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+          <button type="button" class="btn btn-outline-light mb-2">Light</button>
+          <button type="button" class="btn btn-outline-success mb-2">Success</button>
+          <button type="button" class="btn btn-outline-info mb-2">Info</button>
+    </div>
+
+<div class="col m-4 p-4 bg-secondary rounded">
+       <p class="text-light"><small><em>Adding a class of .btn-lg to the button tag will allow you to create a large button</em></small></p>  
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+         
+
+       <p class="text-light mt-5"><small><em>Adding a class of .btn-sm to the button tag will allow you to create a small button</em></small></p>  
+          <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          
+
+       <p class="text-light mt-5"><small><em>Adding a class of .btn-block to the button tag will allow you to create a button that spans the full width of its parent element</em></small></p>  
+          <button type="button" class="btn btn-primary btn-lg btn-block">Block button</button>
+          
+</div>
+
+  </div>
+</div>
+       
+
+
+
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Still want to learn more?</a>
+            <a class="btn btn-primary" href="https://getbootstrap.com/docs/4.4/getting-started/introduction//" target="_blank" role="button">Visit the Bootstrap Site</a>
+        </nav>
                  
 
 
