@@ -24,9 +24,9 @@
     
         <div id="myNav" class="collapse navbar-collapse">
           <div class="navbar-nav ml-auto">
-              <a href="#" class="nav-link active">Content</a>
-              <a href="#" class="nav-link">Components</a>
-              <a href="#" class="nav-link">Utilities</a>
+              <a href="#content" class="nav-link active">Content</a>
+              <a href="#utilities" class="nav-link">Utilities</a>
+              <a href="#components" class="nav-link">Components</a>
           </div>
         </div>
     </nav>
@@ -48,7 +48,7 @@
 
     <br>
 
-    <h3 class="mt-4 text-danger"><u>Content</u></h3>
+    <h3 class="mt-4 text-danger" id="content"><u>Content</u></h3>
     <br>
 
     <h5 class="text-primary">Typography</h5>
@@ -154,7 +154,7 @@
         <br>
         <br>
 
-        <h3 class="mt-4 text-danger"><u>Utilities</u></h3>
+        <h3 class="mt-4 text-danger" id="utilities"><u>Utilities</u></h3>
         <br>
           <h5 class="text-primary">Colors</h5>
             <p>Colors can add meaning to text and elements, and can be added using a set of color utility classes. These classes are not named after the colors themselves (red, blue etc.)</p>
@@ -187,11 +187,38 @@
 
     </div>
   </div>
+
+  <br>
+    
+  <h5 class="text-primary">Borders</h5>
+    <p>Use border utilities to quickly style the border and border-radius of an element. Can be used for images, buttons, and other elements</p>
+
+  <div class="container">
+      <div class="row">
+        <div class="col m-4 p-4 bg-secondary rounded">
+            <p class="text-light"><small><em>Bootstrap color classes can be added to .border</em></small></p>
+            <img src="https://via.placeholder.com/75" alt="placeholder"  class="border border-success mr-1">
+            <img src="https://via.placeholder.com/75" alt="placeholder"  class="border border-danger mr-1">
+            <img src="https://via.placeholder.com/75" alt="placeholder"  class="border border-warning">         
+        </div>
+      
+        
+          <div class="col m-4 p-4 bg-secondary rounded">
+              <p class="text-light"><small><em>Additive or subtractive classes can be used to add or take away an elements borders</em></small></p>
+              <img src="https://via.placeholder.com/75" alt="placeholder" class="rounded">
+              <img src="https://via.placeholder.com/75" alt="placeholder"  class="rounded-circle">
+              <img src="https://via.placeholder.com/100x75" alt="placeholder"  class="rounded-pill">          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
             
       <br>
       <br>
 
-      <h3 class="mt-4 text-danger"><u>Components</u></h3>
+      <h3 class="mt-4 text-danger" id="components"><u>Components</u></h3>
         <br>
           <h5 class="text-primary">Alerts</h5>
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts can also be dismissed, but require a specific jQuery plugin to do so</p>
@@ -244,38 +271,38 @@
   <div class="container">
     <div class="row">
 
-<div class="col m-4 p-4 bg-secondary rounded">
-       <p class="text-light"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>            
-          <a class="btn btn-primary mb-2" href="#" role="button">Link</a>
-          <button class="btn btn-primary mb-2" type="submit">Button</button>
-          <input class="btn btn-primary mb-2" type="button" value="Submit">
+      <div class="col m-4 p-4 bg-secondary rounded">
+            <p class="text-light"><small><em>The .btn class is designed to be used with the < button > tag. However, you can also use this class on < a > tags or < input > elements</em></small></p>            
+                <a class="btn btn-primary mb-2" href="#" role="button">Link</a>
+                <button class="btn btn-primary mb-2" type="submit">Button</button>
+                <input class="btn btn-primary mb-2" type="button" value="Submit">
 
-       <p class="text-light mt-5"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>  
-          <button type="button" class="btn btn-primary mb-2">Primary</button>
-          <button type="button" class="btn btn-light mb-2">Light</button>
-          <button type="button" class="btn btn-success mb-2">Success</button> 
-          <button type="button" class="btn btn-danger mb-2">Danger</button>
+            <p class="text-light mt-5"><small><em>Bootstrap color classes can also be applied to buttons</em></small></p>  
+                <button type="button" class="btn btn-primary mb-2">Primary</button>
+                <button type="button" class="btn btn-light mb-2">Light</button>
+                <button type="button" class="btn btn-success mb-2">Success</button> 
+                <button type="button" class="btn btn-danger mb-2">Danger</button>
 
-       <p class="text-light mt-5"><small><em>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</em></small></p>  
-          <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
-          <button type="button" class="btn btn-outline-light mb-2">Light</button>
-          <button type="button" class="btn btn-outline-success mb-2">Success</button>
-          <button type="button" class="btn btn-outline-info mb-2">Info</button>
-    </div>
+            <p class="text-light mt-5"><small><em>You can add "outline" to your .btn class to remove the button color unless hovered over. Give it a try!</em></small></p>  
+                <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+                <button type="button" class="btn btn-outline-light mb-2">Light</button>
+                <button type="button" class="btn btn-outline-success mb-2">Success</button>
+                <button type="button" class="btn btn-outline-info mb-2">Info</button>
+          </div>
 
-<div class="col m-4 p-4 bg-secondary rounded">
-       <p class="text-light"><small><em>Adding a class of .btn-lg to the button tag will allow you to create a large button</em></small></p>  
-          <button type="button" class="btn btn-primary btn-lg">Large button</button>
-         
+        <div class="col m-4 p-4 bg-secondary rounded">
+              <p class="text-light"><small><em>Adding a class of .btn-lg to the button tag will allow you to create a large button</em></small></p>  
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                
 
-       <p class="text-light mt-5"><small><em>Adding a class of .btn-sm to the button tag will allow you to create a small button</em></small></p>  
-          <button type="button" class="btn btn-primary btn-sm">Small button</button>
-          
+              <p class="text-light mt-5"><small><em>Adding a class of .btn-sm to the button tag will allow you to create a small button</em></small></p>  
+              <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                  
 
-       <p class="text-light mt-5"><small><em>Adding a class of .btn-block to the button tag will allow you to create a button that spans the full width of its parent element</em></small></p>  
-          <button type="button" class="btn btn-primary btn-lg btn-block">Block button</button>
-          
-</div>
+              <p class="text-light mt-5"><small><em>Adding a class of .btn-block to the button tag will allow you to create a button that spans the full width of its parent element</em></small></p>  
+              <button type="button" class="btn btn-primary btn-lg btn-block">Block button</button>
+                  
+        </div>
 
   </div>
 </div>
